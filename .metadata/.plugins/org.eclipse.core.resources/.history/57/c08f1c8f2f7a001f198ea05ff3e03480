@@ -1,0 +1,14 @@
+package com.pcwk.ehr.ed02;
+
+public class J03Exam03 {
+
+	public static void main(String[] args) {
+		int[] ball = new int[45];
+		for(int i=0; i<ball.length;i++) {
+			ball[i] = i+1;
+			System.out.println(ball[i]);
+		}
+		
+	}
+
+}

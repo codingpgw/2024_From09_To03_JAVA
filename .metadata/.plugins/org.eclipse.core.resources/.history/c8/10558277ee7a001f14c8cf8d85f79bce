@@ -1,0 +1,27 @@
+package com.pcwk.ehr.ed02;
+
+public class J01TwoDArray {
+
+	public static void main(String[] args) {
+		int[][] score = {
+				{100,100,100},
+				{20,20,20},
+				{40,40,40},
+				{60,60,60},
+				{80,80,80}
+		};
+		
+		//모든 요소에 접근
+		System.out.println("행(row) : "+score.length);
+		System.out.println("열(col) : "+score[0].length);
+		
+		for(int i=0; i<score.length; i++) {
+			for(int j=0; j<score[i].length; j++) {
+				System.out.printf("score[%d][%d] = %d\n",i,j,score[i][j]);
+			}
+			
+		}
+
+	}
+
+}

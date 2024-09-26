@@ -1,0 +1,15 @@
+package com.pcwk.ehr.ed01;
+
+public class test {
+
+	public static void main(String[] args) {
+		 char[] hex = {'C', 'A', 'F', 'E', '2'};
+		 int[]  decimal = new int[hex.length];
+		 for(int i = 0; i < hex.length; i++) {
+			 decimal[i] = hex[i] - 0;
+			 System.out.println(decimal[i]);
+		 }
+		 
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.pcwk.ehr.ed02;
+
+import java.util.Collections;
+import java.util.Random;
+
+public class J03Exam03 {
+
+	public static void main(String[] args) {
+		int[] ball = new int[45];
+		for(int i=0; i<ball.length;i++) {
+			ball[i] = i+1;
+		}
+		Random random = new Random();
+        
+        // Fisher-Yates 셔플 알고리즘 사용
+        for (int i = ball.length - 1; i > 0; i--) {
+            int j = random.nextInt(i + 1);
+            
+            // 두 요소의 위치를 교환
+            int temp = ball[i];
+            ball[i] = ball[j];
+            ball[j] = temp;
+        }
+        System.out.println(ball[0]);
+	}
+
+}

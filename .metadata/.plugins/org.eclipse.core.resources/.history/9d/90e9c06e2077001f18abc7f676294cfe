@@ -1,0 +1,10 @@
+package com.pcwk.ehr.ed03;
+
+public class Ed02DoWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

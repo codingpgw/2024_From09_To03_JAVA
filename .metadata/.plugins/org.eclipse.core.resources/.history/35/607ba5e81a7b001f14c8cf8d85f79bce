@@ -1,0 +1,93 @@
+package com.pcwk.ehr.ed02;
+
+import java.util.Scanner;
+
+public class J07Bingo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[][] bingo = new int[5][5];
+		final int SIZE = bingo.length;
+		boolean[][] marked = new boolean[SIZE][SIZE];
+		boolean[] bingoSign = new boolean[5];
+		
+		for(int i=0; i<SIZE; i++) {
+			for(int j=0; j<bingo[i].length; j++) {
+				bingo[i][j] = i*5+(j+1);
+			}
+		}			
+		
+		for(int i=0; i<SIZE; i++) {
+			for(int j=0; j<bingo[i].length; j++) {
+				int n1 = (int)(Math.random()*SIZE);
+				int n2 = (int)(Math.random()*SIZE);
+				int tmp = bingo[0][0];
+				bingo[0][0] = bingo[n2][n1];
+				bingo[n2][n1] = tmp;
+			}
+		}			
+	
+		while(true) {
+			int cnt = 0;
+			int cnt1 = 0;
+			int cnt2 = 0;
+			int cnt3 = 0;
+			int finish = 0;
+			System.out.print("1~25숫자를 입력하세요. > ");
+			int answer = sc.nextInt();
+			if(answer == 100) {
+				System.out.println("빙고 종료");
+				break;
+			}else if(finish >= 3) {
+				System.out.println("3번의 빙고를 맞췄습니다.");
+				break;
+			}
+			
+			for(int i=0; i<SIZE; i++) {
+				
+				for(int j=0; j<bingo[i].length; j++) {
+					if(answer == bingo[i][j]) {
+						bingo[i][j] = 0;
+						marked[i][j] = true;
+					}
+					if(marked[i][j]) {
+						cnt++;
+						if(cnt == 5) {
+							bingoSign[0] = true;
+						}
+					} 
+					if(marked[j][i]) {
+						cnt1++;
+						if(cnt1 == 5) {
+							bingoSign[1] = true;
+						}
+					}
+					System.out.printf("%4d",bingo[i][j]);
+					
+				}
+				if(marked[i][i]) {
+					cnt2++;
+					if(cnt2 == 5) {
+						bingoSign[2] = true;
+					}
+				}
+				if(marked[i][SIZE-1-i]) {
+					cnt3++;
+					if(cnt3 == 5) {
+						bingoSign[3] = true;
+					}
+				}
+				System.out.println();
+				if(bingoSign[i]) {
+					finish++;
+				}
+			}
+			
+			
+			
+		}
+
+		sc.close();
+	}
+
+}

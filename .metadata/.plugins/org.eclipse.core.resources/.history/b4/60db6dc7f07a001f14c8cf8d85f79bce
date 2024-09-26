@@ -1,0 +1,18 @@
+package com.pcwk.ehr.ed02;
+
+public class J02TwoDArray {
+
+	public static void main(String[] args) {
+		int[][] score = {
+				{100,100,100},
+				{20,20,20},
+				{40,40,40},
+				{60,60,60},
+				{80,80,80}
+		};
+		System.out.println("\t 자바    오라클    Spring   합계   평균");
+		System.out.println("----------------------------------------");
+
+	}
+
+}

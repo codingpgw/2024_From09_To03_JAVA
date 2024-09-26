@@ -1,0 +1,12 @@
+package com.pcwk.ehr.ed02;
+
+public class J02Break {
+
+	public static void main(String[] args) {
+		
+		for(char ch='A'; ch<='Z'; ch++) {
+			System.out.println(ch);
+		}
+	}
+
+}

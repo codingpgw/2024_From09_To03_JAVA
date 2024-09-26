@@ -1,0 +1,17 @@
+package com.pcwk.ehr.ed02;
+
+public class J01TwoDArray {
+
+	public static void main(String[] args) {
+		int[][] score = {
+				{100,100,100},
+				{20,20,20},
+				{40,40,40},
+				{60,60,60},
+				{80,80,80}
+		};
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.pcwk.ehr.ed01;
+
+public class Ed04Switch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

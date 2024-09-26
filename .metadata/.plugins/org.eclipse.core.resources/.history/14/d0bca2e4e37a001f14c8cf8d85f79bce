@@ -1,0 +1,15 @@
+
+public class J04Calc {
+
+	public static void main(String[] args) {
+		
+		int num01 = Integer.parseInt(args[0]);
+		char op = args[1].charAt(0);
+		int num02 = Integer.parseInt(args[2]);
+
+		System.out.println("num01 : "+num01);
+		System.out.println("op : "+op);
+		System.out.println("num02 : "+num02);
+	}
+
+}

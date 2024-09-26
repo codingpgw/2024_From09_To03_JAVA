@@ -1,0 +1,15 @@
+package com.pcwk.ehr.ed01;
+
+public class J02ArrayInit {
+
+	public static void main(String[] args) {
+		int[] score = new int[5];
+		
+		//score 자체 출력
+		for(int i=0; i<score.length; i++) {
+			System.out.printf("score[%d] = %d\n",i,score[i]);
+		}
+
+	}
+
+}
