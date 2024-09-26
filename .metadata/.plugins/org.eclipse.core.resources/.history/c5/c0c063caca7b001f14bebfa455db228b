@@ -1,0 +1,14 @@
+package com.pcwk.ehr.ed05;
+
+import com.pcwk.ehr.ed05.Card;
+public class CardMain {
+
+	public static void main(String[] args) {
+		
+		Card card = new Card();
+		System.out.println(Card.width);
+		System.out.println(Card.height);
+		
+	}
+
+}
