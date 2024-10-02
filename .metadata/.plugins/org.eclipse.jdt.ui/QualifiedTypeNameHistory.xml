@@ -22,4 +22,10 @@
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed04.Point"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed04.Triangle"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed02.Point3D"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed07.BankAccount"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed10.FinalVariable"/>
 </qualifiedTypeNameHistroy>
