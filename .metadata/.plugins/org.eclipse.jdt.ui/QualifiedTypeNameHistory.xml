@@ -25,7 +25,15 @@
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed02.Point3D"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed07.BankAccount"/>
-    <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
-    <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed10.FinalVariable"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed03.FireEngine"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed03.Ambulance"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed05.Americano"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed05.CaffeLatte"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed06.CaffeMocha"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed07.Americano"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed07.CaffeLatte"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed08.Rectangle"/>
 </qualifiedTypeNameHistroy>

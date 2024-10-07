@@ -6,12 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="log.debug"/>
+		<item key="selection" value="mc"/>
 		<list key="findhistory">
+			<item value="mi"/>
 			<item value="System.out.printf"/>
 			<item value="log.debug"/>
 		</list>
 		<list key="replacehistory">
+			<item value="mc"/>
 			<item value="log.debug"/>
 		</list>
 	</section>
