@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=J15/src&lt;com.pcwk.ehr.ed02{Animal.java[Animal" modifiers="1" timestamp="1727829760068"/>
-    <typeInfo handle="=J15/src&lt;com.pcwk.ehr.ed03{Car.java[Car" modifiers="1" timestamp="1727832040321"/>
-    <typeInfo handle="=J15/src&lt;com.pcwk.ehr.ed04{Animal.java[Animal" modifiers="1" timestamp="1727833633045"/>
-    <typeInfo handle="=J15/src&lt;com.pcwk.ehr.ed05{Coffee.java[Coffee" modifiers="1" timestamp="1727835569706"/>
-    <typeInfo handle="=J15/src&lt;com.pcwk.ehr.ed08{Shape.java[Shape" modifiers="1025" timestamp="1727846667974"/>
-    <typeInfo handle="=J15/src&lt;com.pcwk.ehr.ed09{Game.java[Game" modifiers="1025" timestamp="1727849052662"/>
-    <typeInfo handle="=J15/src&lt;com.pcwk.ehr.ed10{MyInterface.java[MyInterface" modifiers="513" timestamp="1727851845400"/>
+    <typeInfo handle="=J16/src&lt;com.pcwk.ehr.ed01{RemoteControl.java[RemoteControl" modifiers="513" timestamp="1728260766637"/>
+    <typeInfo handle="=J16/src&lt;com.pcwk.ehr.ed07{InterWeb.java[InterWeb" modifiers="513" timestamp="1728266852030"/>
+    <typeInfo handle="=J16/src&lt;com.pcwk.ehr.ed09{Animal.java[Animal" modifiers="513" timestamp="1728268447605"/>
 </typeInfoHistroy>

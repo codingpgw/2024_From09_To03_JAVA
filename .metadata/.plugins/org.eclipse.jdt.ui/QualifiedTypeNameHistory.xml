@@ -36,4 +36,11 @@
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed07.Americano"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed07.CaffeLatte"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed08.Rectangle"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed01.RemoteControl"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed04.RemoteControl"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed05.RemoteControl"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed06.RemoteControl"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed06.Searchable"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed10.Outer.InnerClass"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed11.Outer.StaticInner"/>
 </qualifiedTypeNameHistroy>
