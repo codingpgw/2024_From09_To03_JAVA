@@ -1,0 +1,37 @@
+[2024-10-10 09:25:23] DEBUG FileComment.main(FileComment.java:31) - debug
+[2024-10-10 09:25:23] INFO  FileComment.main(FileComment.java:32) - info
+[2024-10-10 09:25:23] WARN  FileComment.main(FileComment.java:33) - warn
+[2024-10-10 09:25:23] ERROR FileComment.main(FileComment.java:34) - ERROR
+[2024-10-10 09:25:23] FATAL FileComment.main(FileComment.java:35) - fatal
+[2024-10-10 09:32:00] DEBUG FileComment.main(FileComment.java:33) - debug
+[2024-10-10 09:32:00] INFO  FileComment.main(FileComment.java:34) - info
+[2024-10-10 09:32:00] WARN  FileComment.main(FileComment.java:35) - warn
+[2024-10-10 09:32:00] ERROR FileComment.main(FileComment.java:36) - ERROR
+[2024-10-10 09:32:00] FATAL FileComment.main(FileComment.java:37) - fatal
+[2024-10-10 11:02:49] DEBUG J01ObjectToString.main(J01ObjectToString.java:9) - com.pcwk.ehr.ed02.Car@5656be13
+[2024-10-10 11:02:49] DEBUG J01ObjectToString.main(J01ObjectToString.java:10) - com.pcwk.ehr.ed02.Car@5656be13
+[2024-10-10 11:04:54] DEBUG J01ObjectToString.main(J01ObjectToString.java:9) - Car [model=제네시스]
+[2024-10-10 11:04:54] DEBUG J01ObjectToString.main(J01ObjectToString.java:10) - Car [model=제네시스]
+[2024-10-10 11:15:38] DEBUG Main.main(Main.java:11) - false
+[2024-10-10 11:16:21] DEBUG Main.main(Main.java:11) - c1.equals(c2) : false
+[2024-10-10 11:18:42] DEBUG Main.main(Main.java:11) - c1.equals(c2) : true
+[2024-10-10 11:19:05] DEBUG Main.main(Main.java:11) - c1.equals(c2) : false
+[2024-10-10 11:19:09] DEBUG Main.main(Main.java:11) - c1.equals(c2) : true
+[2024-10-10 11:21:30] DEBUG Main.main(Main.java:11) - c1.equals(c2) : true
+[2024-10-10 11:24:29] DEBUG Main.main(Main.java:11) - c1.equals(c2) : true
+[2024-10-10 11:24:29] DEBUG Main.main(Main.java:12) - 1571309039
+[2024-10-10 11:24:47] DEBUG Main.main(Main.java:11) - c1.equals(c2) : true
+[2024-10-10 11:24:47] DEBUG Main.main(Main.java:12) - 1571309039
+[2024-10-10 11:24:47] DEBUG Main.main(Main.java:13) - 1571309039
+[2024-10-10 11:26:07] DEBUG Main.main(Main.java:11) - c1.equals(c2) : false
+[2024-10-10 11:26:07] DEBUG Main.main(Main.java:12) - 1571309039
+[2024-10-10 11:26:07] DEBUG Main.main(Main.java:13) - 50685811
+[2024-10-10 11:26:16] DEBUG Main.main(Main.java:11) - c1.equals(c2) : true
+[2024-10-10 11:26:16] DEBUG Main.main(Main.java:12) - 1571309039
+[2024-10-10 11:26:16] DEBUG Main.main(Main.java:13) - 1571309039
+[2024-10-10 11:27:04] DEBUG Main.main(Main.java:11) - c1.equals(c2) : true
+[2024-10-10 11:27:04] DEBUG Main.main(Main.java:12) - 1571309039
+[2024-10-10 11:27:04] DEBUG Main.main(Main.java:13) - 1571309039
+[2024-10-10 11:29:03] DEBUG Main.main(Main.java:11) - c1.equals(c2) : true
+[2024-10-10 11:29:03] DEBUG Main.main(Main.java:12) - 1571309039
+[2024-10-10 11:29:03] DEBUG Main.main(Main.java:13) - 1571309039

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
@@ -43,4 +42,22 @@
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed06.Searchable"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed10.Outer.InnerClass"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.ed11.Outer.StaticInner"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed02.J05UserException"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed02.PcwkException"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed02.BankAccount"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ex02.NotExistIDException"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ex02.WrongPasswordException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.cmn.PLog"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed04.User"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed04.RUser"/>
 </qualifiedTypeNameHistroy>
