@@ -1,0 +1,252 @@
+[2024-10-11 09:12:01] DEBUG FileComment.main(FileComment.java:30) - debug
+[2024-10-11 09:12:01] INFO  FileComment.main(FileComment.java:31) - info
+[2024-10-11 09:12:01] WARN  FileComment.main(FileComment.java:32) - warn
+[2024-10-11 09:12:01] ERROR FileComment.main(FileComment.java:33) - ERROR
+[2024-10-11 09:12:01] FATAL FileComment.main(FileComment.java:34) - fatal
+[2024-10-11 10:14:23] DEBUG J04StringBuilder.main(J04StringBuilder.java:9) - sb : 16
+[2024-10-11 10:15:04] DEBUG J04StringBuilder.main(J04StringBuilder.java:9) - sb : 16
+[2024-10-11 10:15:04] DEBUG J04StringBuilder.main(J04StringBuilder.java:16) - sb : 16
+[2024-10-11 10:15:36] DEBUG J04StringBuilder.main(J04StringBuilder.java:9) - sb : 16
+[2024-10-11 10:15:36] DEBUG J04StringBuilder.main(J04StringBuilder.java:17) - sb : 34
+[2024-10-11 10:17:46] DEBUG J04StringBuilder.main(J04StringBuilder.java:9) - sb : 16
+[2024-10-11 10:17:46] DEBUG J04StringBuilder.main(J04StringBuilder.java:12) - sb : 34
+[2024-10-11 10:17:57] DEBUG J04StringBuilder.main(J04StringBuilder.java:9) - sb : 16
+[2024-10-11 10:17:57] DEBUG J04StringBuilder.main(J04StringBuilder.java:12) - sb : 34
+[2024-10-11 10:18:26] DEBUG J04StringBuilder.main(J04StringBuilder.java:9) - sb : 16
+[2024-10-11 10:18:26] DEBUG J04StringBuilder.main(J04StringBuilder.java:12) - sb : 34
+[2024-10-11 10:19:54] DEBUG J04StringBuilder.main(J04StringBuilder.java:9) - sb : 16
+[2024-10-11 10:19:54] DEBUG J04StringBuilder.main(J04StringBuilder.java:12) - sb.length() : 18
+[2024-10-11 10:19:54] DEBUG J04StringBuilder.main(J04StringBuilder.java:13) - sb : 34
+[2024-10-11 10:19:54] DEBUG J04StringBuilder.main(J04StringBuilder.java:21) - sb.length() : 81
+[2024-10-11 10:30:02] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - Java를
+[2024-10-11 10:30:02] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 배우는
+[2024-10-11 10:30:02] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 것은
+[2024-10-11 10:30:02] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 매우
+[2024-10-11 10:30:02] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 재미있어요.
+[2024-10-11 10:32:06] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - Java를
+[2024-10-11 10:32:06] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 배우는
+[2024-10-11 10:32:06] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 것은
+[2024-10-11 10:32:06] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 매우
+[2024-10-11 10:32:06] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 재미있어요.
+[2024-10-11 10:32:20] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - Java를
+[2024-10-11 10:32:20] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 배우는
+[2024-10-11 10:32:20] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 것은
+[2024-10-11 10:32:20] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 매우
+[2024-10-11 10:32:20] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 재미있어요.
+[2024-10-11 10:32:41] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - Java를
+[2024-10-11 10:32:41] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 배우는
+[2024-10-11 10:32:41] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 것은
+[2024-10-11 10:32:41] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 매우
+[2024-10-11 10:32:41] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 재미있어요.
+[2024-10-11 10:32:41] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - apple
+[2024-10-11 10:32:41] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - banana
+[2024-10-11 10:32:41] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - orange
+[2024-10-11 10:32:41] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - grapes
+[2024-10-11 10:33:05] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - Java를
+[2024-10-11 10:33:05] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 배우는
+[2024-10-11 10:33:05] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 것은
+[2024-10-11 10:33:05] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 매우
+[2024-10-11 10:33:05] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 재미있어요.
+[2024-10-11 10:33:05] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - apple
+[2024-10-11 10:33:05] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - banana
+[2024-10-11 10:33:05] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - orange
+[2024-10-11 10:33:05] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - grapes
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - Java를
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 배우는
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 것은
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 매우
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:15) - 재미있어요.
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - apple
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - banana
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - orange
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:21) - grapes
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:24) - apple
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:24) - ,
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:24) - banana
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:24) - |
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:24) - orange
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:24) - ,
+[2024-10-11 10:35:10] DEBUG J05StringTokenizer.main(J05StringTokenizer.java:24) - grapes
+[2024-10-11 10:42:52] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 1,이상무,100,100,100
+[2024-10-11 10:42:52] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 2,홍길동,20,20,20
+[2024-10-11 10:42:52] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 3,철수,40,40,40
+[2024-10-11 10:42:52] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 4,영희,60,60,60
+[2024-10-11 10:42:52] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 5,순히,80,80,80
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 1
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 이상무
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 100
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 100
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 100
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 2
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 홍길동
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 20
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 20
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 20
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 3
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 철수
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 40
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 40
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 40
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 4
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 영희
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 60
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 60
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 60
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 5
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 순히
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 80
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 80
+[2024-10-11 10:47:36] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:15) - 80
+[2024-10-11 11:03:01] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:17) - 학생 : 이상무
+[2024-10-11 11:03:01] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:17) - 학생 : 홍길동
+[2024-10-11 11:03:01] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:17) - 학생 : 철수
+[2024-10-11 11:03:01] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:17) - 학생 : 영희
+[2024-10-11 11:03:01] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:17) - 학생 : 순히
+[2024-10-11 11:04:39] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:18) - 학생 : 이상무, 합계 : 300
+[2024-10-11 11:04:39] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:18) - 학생 : 홍길동, 합계 : 60
+[2024-10-11 11:04:39] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:18) - 학생 : 철수, 합계 : 120
+[2024-10-11 11:04:39] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:18) - 학생 : 영희, 합계 : 180
+[2024-10-11 11:04:39] DEBUG J06StringTokenizerUse.main(J06StringTokenizerUse.java:18) - 학생 : 순히, 합계 : 240
+[2024-10-11 11:25:33] DEBUG J01Wrapper.main(J01Wrapper.java:11) - Integer obj : 23
+[2024-10-11 11:25:56] DEBUG J01Wrapper.main(J01Wrapper.java:11) - Integer obj : 23
+[2024-10-11 11:26:14] DEBUG J01Wrapper.main(J01Wrapper.java:11) - Integer obj : 23
+[2024-10-11 11:26:31] DEBUG J01Wrapper.main(J01Wrapper.java:11) - Integer obj : 23
+[2024-10-11 11:26:38] DEBUG J01Wrapper.main(J01Wrapper.java:11) - Integer obj : 23
+[2024-10-11 11:27:41] DEBUG J01Wrapper.main(J01Wrapper.java:13) - Integer obj : 23
+[2024-10-11 11:27:41] DEBUG J01Wrapper.main(J01Wrapper.java:14) - 언박싱 int value : 23
+[2024-10-11 11:28:02] DEBUG J01Wrapper.main(J01Wrapper.java:13) - Integer obj : 23
+[2024-10-11 11:28:02] DEBUG J01Wrapper.main(J01Wrapper.java:14) - 언박싱 int value : 23
+[2024-10-11 11:30:51] DEBUG J01Wrapper.main(J01Wrapper.java:13) - Integer obj : 23
+[2024-10-11 11:30:51] DEBUG J01Wrapper.main(J01Wrapper.java:14) - 언박싱 int value : 23
+[2024-10-11 11:30:51] DEBUG J01Wrapper.main(J01Wrapper.java:19) - Auto-boxing : 22
+[2024-10-11 11:30:51] DEBUG J01Wrapper.main(J01Wrapper.java:20) - Auto-unboxing : 22
+[2024-10-11 11:33:22] DEBUG J01Wrapper.main(J01Wrapper.java:15) - Integer obj : 23
+[2024-10-11 11:33:22] DEBUG J01Wrapper.main(J01Wrapper.java:16) - 언박싱 int value : 23
+[2024-10-11 11:33:22] DEBUG J01Wrapper.main(J01Wrapper.java:21) - Auto-boxing : 22
+[2024-10-11 11:33:22] DEBUG J01Wrapper.main(J01Wrapper.java:22) - Auto-unboxing : 22
+[2024-10-11 11:33:25] DEBUG J01Wrapper.main(J01Wrapper.java:15) - Integer obj : 23
+[2024-10-11 11:33:25] DEBUG J01Wrapper.main(J01Wrapper.java:16) - 언박싱 int value : 23
+[2024-10-11 11:33:25] DEBUG J01Wrapper.main(J01Wrapper.java:21) - Auto-boxing : 22
+[2024-10-11 11:33:25] DEBUG J01Wrapper.main(J01Wrapper.java:22) - Auto-unboxing : 22
+[2024-10-11 11:33:40] DEBUG J01Wrapper.main(J01Wrapper.java:15) - Integer obj : 23
+[2024-10-11 11:33:40] DEBUG J01Wrapper.main(J01Wrapper.java:16) - 언박싱 int value : 23
+[2024-10-11 11:33:40] DEBUG J01Wrapper.main(J01Wrapper.java:21) - Auto-boxing : 22
+[2024-10-11 11:33:40] DEBUG J01Wrapper.main(J01Wrapper.java:22) - Auto-unboxing : 22
+[2024-10-11 12:04:04] DEBUG J01Math.main(J01Math.java:9) - 30
+[2024-10-11 12:04:28] DEBUG J01Math.main(J01Math.java:9) - 절대값 : 30
+[2024-10-11 12:05:03] DEBUG J01Math.main(J01Math.java:9) - 절대값 : 30
+[2024-10-11 12:05:03] DEBUG J01Math.main(J01Math.java:12) - 반올림 : 3
+[2024-10-11 12:07:52] DEBUG J01Math.main(J01Math.java:9) - 절대값 : 30
+[2024-10-11 12:07:52] DEBUG J01Math.main(J01Math.java:12) - 반올림 : 3
+[2024-10-11 12:07:52] DEBUG J01Math.main(J01Math.java:15) - 반올림 : 9076
+[2024-10-11 12:08:05] DEBUG J01Math.main(J01Math.java:9) - 절대값 : 30
+[2024-10-11 12:08:05] DEBUG J01Math.main(J01Math.java:12) - 반올림 : 3
+[2024-10-11 12:08:05] DEBUG J01Math.main(J01Math.java:15) - 반올림 : 90
+[2024-10-11 12:08:11] DEBUG J01Math.main(J01Math.java:9) - 절대값 : 30
+[2024-10-11 12:08:11] DEBUG J01Math.main(J01Math.java:12) - 반올림 : 3
+[2024-10-11 12:08:11] DEBUG J01Math.main(J01Math.java:15) - 반올림 : 90.76
+[2024-10-11 12:12:44] DEBUG J01Math.main(J01Math.java:9) - 절대값 : 30
+[2024-10-11 12:12:44] DEBUG J01Math.main(J01Math.java:12) - 반올림 : 3
+[2024-10-11 12:12:44] DEBUG J01Math.main(J01Math.java:15) - 반올림 : 90.76
+[2024-10-11 12:12:44] DEBUG J01Math.main(J01Math.java:18) - 올림 : 3.0
+[2024-10-11 12:13:32] DEBUG J01Math.main(J01Math.java:8) - 절대값 : 30
+[2024-10-11 12:13:32] DEBUG J01Math.main(J01Math.java:10) - 반올림 : 3
+[2024-10-11 12:13:32] DEBUG J01Math.main(J01Math.java:13) - 반올림 : 90.76
+[2024-10-11 12:13:32] DEBUG J01Math.main(J01Math.java:15) - 올림 : 3.0
+[2024-10-11 12:13:32] DEBUG J01Math.main(J01Math.java:17) - 내림 : 3.0
+[2024-10-11 12:14:45] DEBUG J01Math.main(J01Math.java:8) - 절대값 : 30
+[2024-10-11 12:14:45] DEBUG J01Math.main(J01Math.java:10) - 반올림 : 3
+[2024-10-11 12:14:45] DEBUG J01Math.main(J01Math.java:13) - 반올림 : 90.76
+[2024-10-11 12:14:45] DEBUG J01Math.main(J01Math.java:15) - 올림 : 3.0
+[2024-10-11 12:14:45] DEBUG J01Math.main(J01Math.java:17) - 내림 : 3.0
+[2024-10-11 12:14:45] DEBUG J01Math.main(J01Math.java:19) - 최대 : 15
+[2024-10-11 12:15:47] DEBUG J01Math.main(J01Math.java:8) - 절대값 : 30
+[2024-10-11 12:15:47] DEBUG J01Math.main(J01Math.java:10) - 반올림 : 3
+[2024-10-11 12:15:47] DEBUG J01Math.main(J01Math.java:13) - 반올림 : 90.76
+[2024-10-11 12:15:47] DEBUG J01Math.main(J01Math.java:15) - 올림 : 3.0
+[2024-10-11 12:15:47] DEBUG J01Math.main(J01Math.java:17) - 내림 : 3.0
+[2024-10-11 12:15:47] DEBUG J01Math.main(J01Math.java:19) - 최대 : 15
+[2024-10-11 12:15:47] DEBUG J01Math.main(J01Math.java:21) - 제곱 : 8.0
+[2024-10-11 12:16:07] DEBUG J01Math.main(J01Math.java:8) - 절대값 : 30
+[2024-10-11 12:16:07] DEBUG J01Math.main(J01Math.java:10) - 반올림 : 3
+[2024-10-11 12:16:07] DEBUG J01Math.main(J01Math.java:13) - 반올림 : 90.76
+[2024-10-11 12:16:07] DEBUG J01Math.main(J01Math.java:15) - 올림 : 3.0
+[2024-10-11 12:16:07] DEBUG J01Math.main(J01Math.java:17) - 내림 : 3.0
+[2024-10-11 12:16:07] DEBUG J01Math.main(J01Math.java:19) - 최대 : 15
+[2024-10-11 12:16:07] DEBUG J01Math.main(J01Math.java:21) - 제곱 : 8.0
+[2024-10-11 12:16:07] DEBUG J01Math.main(J01Math.java:22) - 제곱근 : 1.4142135623730951
+[2024-10-11 12:16:16] DEBUG J01Math.main(J01Math.java:8) - 절대값 : 30
+[2024-10-11 12:16:16] DEBUG J01Math.main(J01Math.java:10) - 반올림 : 3
+[2024-10-11 12:16:16] DEBUG J01Math.main(J01Math.java:13) - 반올림 : 90.76
+[2024-10-11 12:16:16] DEBUG J01Math.main(J01Math.java:15) - 올림 : 3.0
+[2024-10-11 12:16:16] DEBUG J01Math.main(J01Math.java:17) - 내림 : 3.0
+[2024-10-11 12:16:16] DEBUG J01Math.main(J01Math.java:19) - 최대 : 15
+[2024-10-11 12:16:16] DEBUG J01Math.main(J01Math.java:21) - 제곱 : 8.0
+[2024-10-11 12:16:16] DEBUG J01Math.main(J01Math.java:22) - 제곱근 : 4.0
+[2024-10-11 12:24:14] DEBUG J01Math.main(J01Math.java:8) - 절대값 : 30
+[2024-10-11 12:24:14] DEBUG J01Math.main(J01Math.java:10) - 반올림 : 3
+[2024-10-11 12:24:15] DEBUG J01Math.main(J01Math.java:13) - 반올림 : 90.76
+[2024-10-11 12:24:15] DEBUG J01Math.main(J01Math.java:15) - 올림 : 3.0
+[2024-10-11 12:24:15] DEBUG J01Math.main(J01Math.java:17) - 내림 : 3.0
+[2024-10-11 12:24:15] DEBUG J01Math.main(J01Math.java:19) - 최대 : 15
+[2024-10-11 12:24:15] DEBUG J01Math.main(J01Math.java:21) - 제곱 : 8.0
+[2024-10-11 12:24:15] DEBUG J01Math.main(J01Math.java:22) - 제곱근 : 4.0
+[2024-10-11 12:24:27] DEBUG J01Math.main(J01Math.java:8) - 절대값 : 30
+[2024-10-11 12:24:27] DEBUG J01Math.main(J01Math.java:10) - 반올림 : 3
+[2024-10-11 12:24:27] DEBUG J01Math.main(J01Math.java:13) - 반올림 : 90.76
+[2024-10-11 12:24:27] DEBUG J01Math.main(J01Math.java:15) - 올림 : 3.0
+[2024-10-11 12:24:27] DEBUG J01Math.main(J01Math.java:17) - 내림 : 3.0
+[2024-10-11 12:24:27] DEBUG J01Math.main(J01Math.java:19) - 최대 : 15
+[2024-10-11 12:24:27] DEBUG J01Math.main(J01Math.java:21) - 제곱 : 8.0
+[2024-10-11 12:24:27] DEBUG J01Math.main(J01Math.java:22) - 제곱근 : 4.0
+[2024-10-11 14:15:13] DEBUG J01BigInteger.main(J01BigInteger.java:10) - 9223372036854775807
+[2024-10-11 14:15:45] DEBUG J01BigInteger.main(J01BigInteger.java:10) - 9223372036854775807
+[2024-10-11 14:16:06] DEBUG J01BigInteger.main(J01BigInteger.java:10) - 9223372036854775807
+[2024-10-11 14:16:06] DEBUG J01BigInteger.main(J01BigInteger.java:11) - 19
+[2024-10-11 14:17:03] DEBUG J01BigInteger.main(J01BigInteger.java:10) - 9223372036854775807
+[2024-10-11 14:17:03] DEBUG J01BigInteger.main(J01BigInteger.java:11) - 19
+[2024-10-11 14:17:03] DEBUG J01BigInteger.main(J01BigInteger.java:14) - -9223372036854775808
+[2024-10-11 14:20:08] DEBUG J01BigInteger.main(J01BigInteger.java:12) - 9223372036854775807
+[2024-10-11 14:20:08] DEBUG J01BigInteger.main(J01BigInteger.java:13) - 19
+[2024-10-11 14:20:08] DEBUG J01BigInteger.main(J01BigInteger.java:16) - -9223372036854775808
+[2024-10-11 14:20:08] DEBUG J01BigInteger.main(J01BigInteger.java:22) - 10223372036854775807
+[2024-10-11 14:21:07] DEBUG J01BigInteger.main(J01BigInteger.java:12) - 9223372036854775807
+[2024-10-11 14:21:07] DEBUG J01BigInteger.main(J01BigInteger.java:13) - 19
+[2024-10-11 14:21:07] DEBUG J01BigInteger.main(J01BigInteger.java:16) - -9223372036854775808
+[2024-10-11 14:21:07] DEBUG J01BigInteger.main(J01BigInteger.java:22) - 10223372036854775807
+[2024-10-11 14:21:07] DEBUG J01BigInteger.main(J01BigInteger.java:23) - 8223372036854775807
+[2024-10-11 14:21:41] DEBUG J01BigInteger.main(J01BigInteger.java:12) - 9223372036854775807
+[2024-10-11 14:21:41] DEBUG J01BigInteger.main(J01BigInteger.java:13) - 19
+[2024-10-11 14:21:41] DEBUG J01BigInteger.main(J01BigInteger.java:16) - -9223372036854775808
+[2024-10-11 14:21:41] DEBUG J01BigInteger.main(J01BigInteger.java:22) - 10223372036854775807
+[2024-10-11 14:21:41] DEBUG J01BigInteger.main(J01BigInteger.java:23) - 8223372036854775807
+[2024-10-11 14:21:41] DEBUG J01BigInteger.main(J01BigInteger.java:24) - 9223372036854775807000000000000000000
+[2024-10-11 14:22:19] DEBUG J01BigInteger.main(J01BigInteger.java:12) - 9223372036854775807
+[2024-10-11 14:22:19] DEBUG J01BigInteger.main(J01BigInteger.java:13) - 19
+[2024-10-11 14:22:19] DEBUG J01BigInteger.main(J01BigInteger.java:16) - -9223372036854775808
+[2024-10-11 14:22:19] DEBUG J01BigInteger.main(J01BigInteger.java:22) - 10223372036854775807
+[2024-10-11 14:22:19] DEBUG J01BigInteger.main(J01BigInteger.java:23) - 8223372036854775807
+[2024-10-11 14:22:19] DEBUG J01BigInteger.main(J01BigInteger.java:24) - 9223372036854775807000000000000000000
+[2024-10-11 14:22:19] DEBUG J01BigInteger.main(J01BigInteger.java:25) - 9
+[2024-10-11 14:40:49] DEBUG J03BigDecimal.main(J03BigDecimal.java:14) - 124.456
+[2024-10-11 14:41:35] DEBUG J03BigDecimal.main(J03BigDecimal.java:14) - 124.456
+[2024-10-11 14:41:35] DEBUG J03BigDecimal.main(J03BigDecimal.java:15) - 122.456
+[2024-10-11 14:41:35] DEBUG J03BigDecimal.main(J03BigDecimal.java:16) - 123.4560
+[2024-10-11 14:41:35] DEBUG J03BigDecimal.main(J03BigDecimal.java:17) - 123.456
+[2024-10-11 14:43:40] DEBUG J03BigDecimal.main(J03BigDecimal.java:14) - 124.456
+[2024-10-11 14:43:40] DEBUG J03BigDecimal.main(J03BigDecimal.java:15) - 122.456
+[2024-10-11 14:43:40] DEBUG J03BigDecimal.main(J03BigDecimal.java:16) - 123.4560
+[2024-10-11 14:43:40] DEBUG J03BigDecimal.main(J03BigDecimal.java:17) - 123.456
+[2024-10-11 14:43:40] DEBUG J03BigDecimal.main(J03BigDecimal.java:19) - 123.46
+[2024-10-11 14:46:58] DEBUG J03BigDecimal.main(J03BigDecimal.java:14) - 124.456
+[2024-10-11 14:46:58] DEBUG J03BigDecimal.main(J03BigDecimal.java:15) - 122.456
+[2024-10-11 14:46:58] DEBUG J03BigDecimal.main(J03BigDecimal.java:16) - 123.4560
+[2024-10-11 14:46:58] DEBUG J03BigDecimal.main(J03BigDecimal.java:17) - 123.456
+[2024-10-11 14:46:58] DEBUG J03BigDecimal.main(J03BigDecimal.java:19) - 123.46
+[2024-10-11 14:46:58] DEBUG J03BigDecimal.main(J03BigDecimal.java:24) - 두 개의 BigDecimal은 같지 않다.
+[2024-10-11 16:33:20] DEBUG J03BigDecimal.main(J03BigDecimal.java:14) - 124.456
+[2024-10-11 16:33:20] DEBUG J03BigDecimal.main(J03BigDecimal.java:15) - 122.456
+[2024-10-11 16:33:20] DEBUG J03BigDecimal.main(J03BigDecimal.java:16) - 123.4560
+[2024-10-11 16:33:20] DEBUG J03BigDecimal.main(J03BigDecimal.java:17) - 123.456
+[2024-10-11 16:33:20] DEBUG J03BigDecimal.main(J03BigDecimal.java:19) - 123.46
+[2024-10-11 16:33:20] DEBUG J03BigDecimal.main(J03BigDecimal.java:24) - 두 개의 BigDecimal은 같지 않다.

@@ -1,0 +1,307 @@
+[2024-10-14 09:16:53] DEBUG FileComment.main(FileComment.java:30) - debug
+[2024-10-14 09:16:53] INFO  FileComment.main(FileComment.java:31) - info
+[2024-10-14 09:16:53] WARN  FileComment.main(FileComment.java:32) - warn
+[2024-10-14 09:16:53] ERROR FileComment.main(FileComment.java:33) - ERROR
+[2024-10-14 09:16:53] FATAL FileComment.main(FileComment.java:34) - fatal
+[2024-10-14 09:22:13] DEBUG J02Date.main(J02Date.java:11) - 현재 날짜 : Mon Oct 14 09:22:12 KST 2024
+
+[2024-10-14 09:26:50] DEBUG J02Date.main(J02Date.java:13) - 현재 날짜 : Mon Oct 14 09:26:49 KST 2024
+
+[2024-10-14 09:26:50] DEBUG J02Date.main(J02Date.java:16) - 현재 날짜 : 2024/10/14 09:26:805
+[2024-10-14 09:46:35] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024
+
+[2024-10-14 09:47:14] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/9
+
+[2024-10-14 09:48:36] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10
+
+[2024-10-14 09:50:23] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:05:23] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:05:29] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:05:54] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:05:54] DEBUG J03Calendar.main(J03Calendar.java:17) - 현재 시간 : 10
+[2024-10-14 10:06:47] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:06:47] DEBUG J03Calendar.main(J03Calendar.java:17) - 현재 시간 : 10 : 6 : 47
+[2024-10-14 10:10:34] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:10:34] DEBUG J03Calendar.main(J03Calendar.java:17) - 현재 시간 : 10 : 10 : 34
+[2024-10-14 10:10:34] DEBUG J03Calendar.main(J03Calendar.java:23) - 오전
+[2024-10-14 10:11:07] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:11:07] DEBUG J03Calendar.main(J03Calendar.java:17) - 현재 시간 : 10 : 11 : 6.473
+[2024-10-14 10:11:07] DEBUG J03Calendar.main(J03Calendar.java:24) - 오전
+[2024-10-14 10:13:42] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:13:42] DEBUG J03Calendar.main(J03Calendar.java:17) - 현재 시간 : 10 : 13 : 42.36
+[2024-10-14 10:13:42] DEBUG J03Calendar.main(J03Calendar.java:24) - 오전
+[2024-10-14 10:13:42] DEBUG J03Calendar.main(J03Calendar.java:35) - dayOfWeek:2
+[2024-10-14 10:14:39] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:14:39] DEBUG J03Calendar.main(J03Calendar.java:17) - 현재 시간 : 10 : 14 : 39.72
+[2024-10-14 10:14:39] DEBUG J03Calendar.main(J03Calendar.java:24) - 오전
+[2024-10-14 10:14:39] DEBUG J03Calendar.main(J03Calendar.java:35) - dayOfWeek : 2
+[2024-10-14 10:14:39] DEBUG J03Calendar.main(J03Calendar.java:36) - 월요일
+[2024-10-14 10:21:15] DEBUG J03Calendar.main(J03Calendar.java:13) - 현재 날짜 : 2024/10/14
+
+[2024-10-14 10:21:15] DEBUG J03Calendar.main(J03Calendar.java:17) - 현재 시간 : 10 : 21 : 14.872
+[2024-10-14 10:21:15] DEBUG J03Calendar.main(J03Calendar.java:24) - 오전
+[2024-10-14 10:21:15] DEBUG J03Calendar.main(J03Calendar.java:35) - dayOfWeek : 2
+[2024-10-14 10:21:15] DEBUG J03Calendar.main(J03Calendar.java:36) - 월요일
+[2024-10-14 10:24:48] DEBUG J04CalendarSet.main(J04CalendarSet.java:26) - 2024/10/31
+[2024-10-14 10:30:18] DEBUG J04CalendarSet.main(J04CalendarSet.java:27) - 2024/10/31
+[2024-10-14 10:31:09] DEBUG J04CalendarSet.main(J04CalendarSet.java:27) - 2024/10/31
+[2024-10-14 10:32:34] DEBUG J04CalendarSet.main(J04CalendarSet.java:27) - 2024/10/31
+[2024-10-14 10:40:48] DEBUG J05CalendarAdd.main(J05CalendarAdd.java:13) - 2024/10/14
+[2024-10-14 10:41:45] DEBUG J05CalendarAdd.main(J05CalendarAdd.java:13) - 2024/10/14
+[2024-10-14 10:41:45] DEBUG J05CalendarAdd.main(J05CalendarAdd.java:17) - 2024/10/17
+[2024-10-14 10:43:23] DEBUG J05CalendarAdd.main(J05CalendarAdd.java:13) - 2024/10/14
+[2024-10-14 10:43:23] DEBUG J05CalendarAdd.main(J05CalendarAdd.java:17) - 3일 후의 날짜 : 2024/10/17
+[2024-10-14 10:43:23] DEBUG J05CalendarAdd.main(J05CalendarAdd.java:21) - 5개월 후의 날짜 : 2025/3/17
+[2024-10-14 10:44:05] DEBUG J04CalendarSet.main(J04CalendarSet.java:27) - 2024/10/31
+[2024-10-14 10:44:16] DEBUG J05CalendarAdd.main(J05CalendarAdd.java:13) - 2024/10/14
+[2024-10-14 10:44:16] DEBUG J05CalendarAdd.main(J05CalendarAdd.java:17) - 3일 후의 날짜 : 2024/10/17
+[2024-10-14 10:44:16] DEBUG J05CalendarAdd.main(J05CalendarAdd.java:21) - 5개월 후의 날짜 : 2025/3/17
+[2024-10-14 11:06:49] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:06:49] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:07:28] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:07:28] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:12:17] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:12:17] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:12:17] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:14:29] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:14:29] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:14:29] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:14:29] DEBUG J06Calendar.main(J06Calendar.java:42) - 3
+[2024-10-14 11:16:38] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:16:38] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:16:38] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:16:38] DEBUG J06Calendar.main(J06Calendar.java:43) - 달의 첫 요일 : 수요일
+[2024-10-14 11:17:17] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:17:17] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:17:17] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:17:17] DEBUG J06Calendar.main(J06Calendar.java:43) - 달의 첫 요일 : 3요일
+[2024-10-14 11:17:17] DEBUG J06Calendar.main(J06Calendar.java:46) - 달의 마지막 요일 : 31요일
+[2024-10-14 11:18:58] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:18:58] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:18:58] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:18:58] DEBUG J06Calendar.main(J06Calendar.java:43) - 달의 첫 요일 : 3
+[2024-10-14 11:18:58] DEBUG J06Calendar.main(J06Calendar.java:46) - 달의 마지막 요일 : 31
+[2024-10-14 11:22:01] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:22:01] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:22:02] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:23:11] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:23:11] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:23:11] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:27:43] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:27:43] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:27:43] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:28:00] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:28:00] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:28:00] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:28:27] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:28:27] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:28:27] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:28:36] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:28:36] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:28:36] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:28:39] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:28:39] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:28:39] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:29:08] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:29:08] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:29:08] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:29:20] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:29:20] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:29:20] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:30:01] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:30:01] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:30:01] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:30:22] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:30:22] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:30:22] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:30:29] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:30:29] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 10
+[2024-10-14 11:30:29] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/10/1
+[2024-10-14 11:31:55] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:31:55] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 11
+[2024-10-14 11:31:55] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/11/1
+[2024-10-14 11:33:34] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:33:34] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 12
+[2024-10-14 11:33:34] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/12/1
+[2024-10-14 11:35:43] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:35:43] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 12
+[2024-10-14 11:35:43] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/12/1
+[2024-10-14 11:35:59] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:35:59] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 12
+[2024-10-14 11:35:59] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/12/1
+[2024-10-14 11:58:59] DEBUG J06Calendar.main(J06Calendar.java:21) - yearString : 2024
+[2024-10-14 11:58:59] DEBUG J06Calendar.main(J06Calendar.java:22) - monthString : 12
+[2024-10-14 11:58:59] DEBUG J06Calendar.main(J06Calendar.java:38) - 2024/12/1
+[2024-10-14 12:08:39] DEBUG J07DateFormat.main(J07DateFormat.java:14) - 현재 날짜 : 2024/10/14 12:08:39 오후
+[2024-10-14 12:09:42] DEBUG J07DateFormat.main(J07DateFormat.java:14) - 현재 날짜 : 2024/10/14 12:09:41 오후
+[2024-10-14 12:09:42] DEBUG J07DateFormat.main(J07DateFormat.java:18) - 올해의 올해의 288번째 날번째 날
+[2024-10-14 12:10:44] DEBUG J07DateFormat.main(J07DateFormat.java:14) - 현재 날짜 : 2024/10/14 12:10:44 오후
+[2024-10-14 12:10:44] DEBUG J07DateFormat.main(J07DateFormat.java:18) - 올해의 288번째 날
+[2024-10-14 12:10:44] DEBUG J07DateFormat.main(J07DateFormat.java:21) - 오늘은 월요일
+[2024-10-14 12:27:17] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:9) - num : 12345.6789
+[2024-10-14 12:29:05] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:11) - num : 12345.6789
+[2024-10-14 12:29:05] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:15) - 0,000.00 : 12,345.68
+[2024-10-14 12:30:28] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:11) - num : 12345.6789
+[2024-10-14 12:30:28] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:15) - 0,000.00 : 12,345.68
+[2024-10-14 12:30:28] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:18) - #,###.## : 12,345.68
+[2024-10-14 12:30:53] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:11) - num : 12345.6789
+[2024-10-14 12:30:53] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:15) - 0,000.00 : 12,345.68
+[2024-10-14 12:30:53] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:18) - #,###.## : 12,345.68
+[2024-10-14 12:32:54] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:11) - num : 12345.6789
+[2024-10-14 12:32:54] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:15) - 0,000.00 : 12,345.68
+[2024-10-14 12:32:54] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:18) - #,###.## : 12,345.68
+[2024-10-14 12:32:54] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:22) - \u00A4#,###.## : ₩12,345.68
+[2024-10-14 12:33:50] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:11) - num : 12345.6789
+[2024-10-14 12:33:50] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:15) - 0,000.00 : 12,345.68
+[2024-10-14 12:33:50] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:18) - #,###.## : 12,345.68
+[2024-10-14 12:33:50] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:22) - ¤#,###.## : ₩12,345.68
+[2024-10-14 12:33:50] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:26) - $u00A4#,###.## : ₩12,345.68
+[2024-10-14 12:34:30] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:11) - num : 12345.6789
+[2024-10-14 12:34:30] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:15) - 0,000.00 : 12,345.68
+[2024-10-14 12:34:30] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:18) - #,###.## : 12,345.68
+[2024-10-14 12:34:30] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:22) - ¤#,###.## : ₩12,345.68
+[2024-10-14 12:34:30] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:26) - $u00A4#,###.## : ₩12,345.68
+[2024-10-14 12:34:30] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:29) - ###.##% : 1234567.89%
+[2024-10-14 12:34:54] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:11) - num : 12345.6789
+[2024-10-14 12:34:54] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:15) - 0,000.00 : 12,345.68
+[2024-10-14 12:34:54] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:18) - #,###.## : 12,345.68
+[2024-10-14 12:34:55] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:22) - ¤#,###.## : ₩12,345.68
+[2024-10-14 12:34:55] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:26) - $u00A4#,###.## : ₩12,345.68
+[2024-10-14 12:34:55] DEBUG J08DecimalFormat.main(J08DecimalFormat.java:29) - ###.##% : 76%
+[2024-10-14 12:43:43] DEBUG J09MessageFormat.main(J09MessageFormat.java:19) - INSERT into MEMBER (member_id, member_name) VALUES ('jamesol','이상무');
+[2024-10-14 14:05:24] DEBUG J09MessageFormat.main(J09MessageFormat.java:19) - INSERT into MEMBER (member_id, member_name) VALUES ('jamesol','이상무');
+[2024-10-14 14:23:41] DEBUG J01DateTime.main(J01DateTime.java:10) - 2024-10-14
+[2024-10-14 14:24:12] DEBUG J01DateTime.main(J01DateTime.java:10) - 현재 날짜 : 2024-10-14
+[2024-10-14 14:25:06] DEBUG J01DateTime.main(J01DateTime.java:10) - 현재 날짜 : 2024-10-14
+[2024-10-14 14:25:06] DEBUG J01DateTime.main(J01DateTime.java:13) - 현재 시간 : 14:25:06.147503600
+[2024-10-14 14:25:43] DEBUG J01DateTime.main(J01DateTime.java:10) - 현재 날짜 : 2024-10-14
+[2024-10-14 14:25:43] DEBUG J01DateTime.main(J01DateTime.java:13) - 현재 시간 : 14:25:43.830056800
+[2024-10-14 14:25:43] DEBUG J01DateTime.main(J01DateTime.java:16) - 현재 날짜+시간 : 2024-10-14T14:25:43.831055200
+[2024-10-14 14:30:36] DEBUG J01DateTime.main(J01DateTime.java:10) - 현재 날짜 : 2024-10-14
+[2024-10-14 14:30:36] DEBUG J01DateTime.main(J01DateTime.java:13) - 현재 시간 : 14:30:36.455163100
+[2024-10-14 14:30:36] DEBUG J01DateTime.main(J01DateTime.java:16) - 현재 날짜+시간 : 2024-10-14T14:30:36.456162300
+[2024-10-14 14:30:36] DEBUG J01DateTime.main(J01DateTime.java:21) - 시스템의 기본 시간대의 현재 날짜와 시간 : 2024-10-14T14:30:36.458155+09:00[Asia/Seoul]
+[2024-10-14 14:33:29] DEBUG J01DateTime.main(J01DateTime.java:10) - 현재 날짜 : 2024-10-14
+[2024-10-14 14:33:29] DEBUG J01DateTime.main(J01DateTime.java:13) - 현재 시간 : 14:33:29.082600900
+[2024-10-14 14:33:29] DEBUG J01DateTime.main(J01DateTime.java:16) - 현재 날짜+시간 : 2024-10-14T14:33:29.083562900
+[2024-10-14 14:33:29] DEBUG J01DateTime.main(J01DateTime.java:21) - 시스템의 기본 시간대의 현재 날짜와 시간 : 2024-10-14T14:33:29.085558600+09:00[Asia/Seoul]
+[2024-10-14 14:33:29] DEBUG J01DateTime.main(J01DateTime.java:25) - 뉴욕 날짜 시간 : 2024-10-14T01:33:29.087552700-04:00[America/New_York]
+[2024-10-14 14:39:59] DEBUG J02DateTime.main(J02DateTime.java:10) - 현재 날짜 : 2024-10-14
+[2024-10-14 14:39:59] DEBUG J02DateTime.main(J02DateTime.java:14) - 특정 날짜 : 2025-03-11
+[2024-10-14 14:39:59] DEBUG J02DateTime.main(J02DateTime.java:17) - 현재 시간 : 14:39:59.678788300
+[2024-10-14 14:39:59] DEBUG J02DateTime.main(J02DateTime.java:20) - 현재 날짜+시간 : 2024-10-14T14:39:59.679786700
+[2024-10-14 14:39:59] DEBUG J02DateTime.main(J02DateTime.java:25) - 시스템의 기본 시간대의 현재 날짜와 시간 : 2024-10-14T14:39:59.681779200+09:00[Asia/Seoul]
+[2024-10-14 14:39:59] DEBUG J02DateTime.main(J02DateTime.java:29) - 뉴욕 날짜 시간 : 2024-10-14T01:39:59.685768600-04:00[America/New_York]
+[2024-10-14 14:41:11] DEBUG J02DateTime.main(J02DateTime.java:10) - 현재 날짜 : 2024-10-14
+[2024-10-14 14:41:11] DEBUG J02DateTime.main(J02DateTime.java:14) - 특정 날짜 : 2025-03-11
+[2024-10-14 14:41:11] DEBUG J02DateTime.main(J02DateTime.java:17) - 현재 시간 : 14:41:11.281768
+[2024-10-14 14:41:11] DEBUG J02DateTime.main(J02DateTime.java:21) - 특정 시간 : 17:50
+[2024-10-14 14:41:11] DEBUG J02DateTime.main(J02DateTime.java:24) - 현재 날짜+시간 : 2024-10-14T14:41:11.282765800
+[2024-10-14 14:41:11] DEBUG J02DateTime.main(J02DateTime.java:29) - 시스템의 기본 시간대의 현재 날짜와 시간 : 2024-10-14T14:41:11.283764900+09:00[Asia/Seoul]
+[2024-10-14 14:41:11] DEBUG J02DateTime.main(J02DateTime.java:33) - 뉴욕 날짜 시간 : 2024-10-14T01:41:11.286756600-04:00[America/New_York]
+[2024-10-14 14:43:30] DEBUG J02DateTime.main(J02DateTime.java:10) - 현재 날짜 : 2024-10-14
+[2024-10-14 14:43:30] DEBUG J02DateTime.main(J02DateTime.java:14) - 특정 날짜 : 2025-03-11
+[2024-10-14 14:43:30] DEBUG J02DateTime.main(J02DateTime.java:17) - 현재 시간 : 14:43:30.546843700
+[2024-10-14 14:43:30] DEBUG J02DateTime.main(J02DateTime.java:21) - 특정 시간 : 17:50
+[2024-10-14 14:43:30] DEBUG J02DateTime.main(J02DateTime.java:24) - 현재 날짜+시간 : 2024-10-14T14:43:30.548840600
+[2024-10-14 14:43:30] DEBUG J02DateTime.main(J02DateTime.java:28) - 특정 날짜+시간 : 2025-03-11T17:50
+[2024-10-14 14:43:30] DEBUG J02DateTime.main(J02DateTime.java:33) - 시스템의 기본 시간대의 현재 날짜와 시간 : 2024-10-14T14:43:30.550867500+09:00[Asia/Seoul]
+[2024-10-14 14:43:30] DEBUG J02DateTime.main(J02DateTime.java:37) - 뉴욕 날짜 시간 : 2024-10-14T01:43:30.552828200-04:00[America/New_York]
+[2024-10-14 15:05:52] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:16) - year : 2024
+[2024-10-14 15:05:52] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:17) - -------------------------------
+[2024-10-14 15:05:52] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:19) - year : 2024
+[2024-10-14 15:09:02] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:17) - year : 2024
+[2024-10-14 15:09:02] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:18) - month : 10
+[2024-10-14 15:09:02] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:19) - day : 14
+[2024-10-14 15:09:02] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:20) - -------------------------------
+[2024-10-14 15:09:02] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:24) - year : 2024
+[2024-10-14 15:09:02] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:25) - month : 10
+[2024-10-14 15:09:02] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:26) - day : 14
+[2024-10-14 15:10:44] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:17) - year : 2024
+[2024-10-14 15:10:44] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:18) - month : 10
+[2024-10-14 15:10:44] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:19) - day : 14
+[2024-10-14 15:10:44] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:20) - -------------------------------
+[2024-10-14 15:10:44] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:27) - year : 2024
+[2024-10-14 15:10:44] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:28) - month : 10
+[2024-10-14 15:10:44] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:29) - day : 14
+[2024-10-14 15:10:44] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:30) - week : 1
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:18) - year : 2024
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:19) - month : 10
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:20) - day : 14
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:21) - -------------------------------
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:28) - year : 2024
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:29) - month : 10
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:30) - day : 14
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:31) - week : 1
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:32) - -------------------------------
+[2024-10-14 15:13:05] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:38) - hour : 15
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:18) - year : 2024
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:19) - month : 10
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:20) - day : 14
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:21) - -------------------------------
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:28) - year : 2024
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:29) - month : 10
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:30) - day : 14
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:31) - week : 1
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:32) - -------------------------------
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:39) - hour : 15
+[2024-10-14 15:13:42] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:40) - minute : 13
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:18) - year : 2024
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:19) - month : 10
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:20) - day : 14
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:21) - -------------------------------
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:28) - year : 2024
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:29) - month : 10
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:30) - day : 14
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:31) - week : 1
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:32) - -------------------------------
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:40) - hour : 15
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:41) - minute : 14
+[2024-10-14 15:14:16] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:42) - second : 16
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:18) - year : 2024
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:19) - month : 10
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:20) - day : 14
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:21) - -------------------------------
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:28) - year : 2024
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:29) - month : 10
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:30) - day : 14
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:31) - week : 1
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:32) - -------------------------------
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:40) - hour : 15
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:41) - minute : 14
+[2024-10-14 15:14:20] DEBUG J03DateTimeGet.main(J03DateTimeGet.java:42) - second : 20
+[2024-10-14 15:23:24] DEBUG J04DateTimeFormatter.main(J04DateTimeFormatter.java:16) - ZonedDateTime : 2024-10-14T15:23:23.579648500+09:00[Asia/Seoul]
+[2024-10-14 15:25:21] DEBUG J04DateTimeFormatter.main(J04DateTimeFormatter.java:17) - ZonedDateTime : 2024-10-14T15:25:21.278042800+09:00[Asia/Seoul]
+[2024-10-14 15:25:21] DEBUG J04DateTimeFormatter.main(J04DateTimeFormatter.java:20) - Value(YearOfEra,4,19,EXCEEDS_PAD)'/'Value(MonthOfYear,2)'/'Value(DayOfMonth,2)' 'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)
+[2024-10-14 15:25:44] DEBUG J04DateTimeFormatter.main(J04DateTimeFormatter.java:17) - ZonedDateTime : 2024-10-14T15:25:43.763010100+09:00[Asia/Seoul]
+[2024-10-14 15:25:44] DEBUG J04DateTimeFormatter.main(J04DateTimeFormatter.java:20) - 2024/10/14 15:25:43
+[2024-10-14 15:29:26] DEBUG J04DateTimeFormatter.main(J04DateTimeFormatter.java:17) - ZonedDateTime : 2024-10-14T15:29:26.004901400+09:00[Asia/Seoul]
+[2024-10-14 15:29:26] DEBUG J04DateTimeFormatter.main(J04DateTimeFormatter.java:20) - 2024/10/14 15:29:26 +0900
+[2024-10-14 15:29:45] DEBUG J04DateTimeFormatter.main(J04DateTimeFormatter.java:17) - ZonedDateTime : 2024-10-14T15:29:44.578337700+09:00[Asia/Seoul]
+[2024-10-14 15:29:45] DEBUG J04DateTimeFormatter.main(J04DateTimeFormatter.java:20) - 4 2024/10/14 15:29:44 +0900
+[2024-10-14 15:33:43] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:17) - 두 날짜 간의 차이 : P17D
+[2024-10-14 15:33:54] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:17) - 두 날짜 간의 차이 : 0
+[2024-10-14 15:34:11] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:17) - 두 날짜 간의 차이 : 1
+[2024-10-14 15:34:35] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:17) - 두 날짜 간의 차이 : 1개월 16일
+[2024-10-14 15:35:41] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:17) - 두 날짜 간의 차이 : 4개월 25일
+[2024-10-14 15:39:04] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:19) - 두 날짜 간의 차이 : 4개월 25일
+[2024-10-14 15:39:04] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:25) - 시간 차이 : 2
+[2024-10-14 15:39:32] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:19) - 두 날짜 간의 차이 : 4개월 25일
+[2024-10-14 15:39:32] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:25) - 시간 차이 : 2시간 130분 7827초
+[2024-10-14 15:40:39] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:19) - 두 날짜 간의 차이 : 4개월 25일
+[2024-10-14 15:40:39] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:25) - 시간 차이 : 2시간 9분 200초
+[2024-10-14 15:40:59] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:19) - 두 날짜 간의 차이 : 4개월 25일
+[2024-10-14 15:40:59] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:25) - 시간 차이 : 2시간 9분 540초
+[2024-10-14 15:41:27] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:19) - 두 날짜 간의 차이 : 4개월 25일
+[2024-10-14 15:41:27] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:25) - 시간 차이 : 2시간 8분 512초
+[2024-10-14 15:41:37] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:19) - 두 날짜 간의 차이 : 4개월 25일
+[2024-10-14 15:41:37] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:25) - 시간 차이 : 2시간 8분 22초
