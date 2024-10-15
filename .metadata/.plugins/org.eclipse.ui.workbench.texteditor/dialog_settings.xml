@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="make"/>
 		<list key="findhistory">
+			<item value="make"/>
+			<item value="call"/>
 			<item value="isLoin"/>
 			<item value="mi"/>
 			<item value="System.out.printf"/>

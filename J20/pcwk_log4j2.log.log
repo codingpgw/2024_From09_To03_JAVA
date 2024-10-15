@@ -305,3 +305,5 @@
 [2024-10-14 15:41:27] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:25) - 시간 차이 : 2시간 8분 512초
 [2024-10-14 15:41:37] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:19) - 두 날짜 간의 차이 : 4개월 25일
 [2024-10-14 15:41:37] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:25) - 시간 차이 : 2시간 8분 22초
+[2024-10-14 17:18:53] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:19) - 두 날짜 간의 차이 : 4개월 25일
+[2024-10-14 17:18:53] DEBUG J05DateTimeCalculate.main(J05DateTimeCalculate.java:25) - 시간 차이 : 0시간 31분 6초

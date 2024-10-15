@@ -1,0 +1,39 @@
+[2024-10-15 09:27:18] DEBUG FileComment.main(FileComment.java:9) - debug
+[2024-10-15 09:27:18] INFO  FileComment.main(FileComment.java:10) - info
+[2024-10-15 09:27:18] WARN  FileComment.main(FileComment.java:11) - warn
+[2024-10-15 09:27:18] ERROR FileComment.main(FileComment.java:12) - ERROR
+[2024-10-15 09:27:18] FATAL FileComment.main(FileComment.java:13) - fatal
+[2024-10-15 09:33:19] DEBUG J01Regex.main(J01Regex.java:22) - 전화 번호 : 010-1234-5678
+[2024-10-15 09:33:54] DEBUG J01Regex.main(J01Regex.java:22) - 전화 번호 : 010-1234-5678, 일치 : true
+[2024-10-15 09:34:25] DEBUG J01Regex.main(J01Regex.java:24) - 잘못된 전화번호 형식
+[2024-10-15 09:34:34] DEBUG J01Regex.main(J01Regex.java:22) - 전화 번호 : 010-1234-5678, 일치 : true
+[2024-10-15 09:38:44] DEBUG J01Regex.main(J01Regex.java:22) - 전화 번호 : 010-1234-5678, 일치 : true
+[2024-10-15 09:38:44] DEBUG J01Regex.main(J01Regex.java:31) - [Ljava.lang.String;@1d296da
+[2024-10-15 09:39:38] DEBUG J01Regex.main(J01Regex.java:22) - 전화 번호 : 010-1234-5678, 일치 : true
+[2024-10-15 09:39:38] DEBUG J01Regex.main(J01Regex.java:33) - sql
+[2024-10-15 09:39:38] DEBUG J01Regex.main(J01Regex.java:33) - oracle
+[2024-10-15 09:39:38] DEBUG J01Regex.main(J01Regex.java:33) - spring
+[2024-10-15 10:04:48] DEBUG J02Regex.main(J02Regex.java:21) - email : jamesol@paran.com은 유효합니다.
+[2024-10-15 10:04:56] DEBUG J02Regex.main(J02Regex.java:21) - email : jame-%sol@paran.com은 유효합니다.
+[2024-10-15 10:05:00] DEBUG J02Regex.main(J02Regex.java:21) - email : jamesol@paran.com은 유효합니다.
+[2024-10-15 10:10:16] DEBUG J03Regex.main(J03Regex.java:21) - email : jamesol@paran.com
+[2024-10-15 10:10:16] DEBUG J03Regex.main(J03Regex.java:21) - email : j1004@naver.com
+[2024-10-15 10:22:01] DEBUG J01Reflection.main(J01Reflection.java:9) - Java 문자열의 길이 4
+[2024-10-15 10:22:01] DEBUG J01Reflection.main(J01Reflection.java:10) - Java 문자열의 문자[0] J
+[2024-10-15 10:24:54] DEBUG J01Reflection.main(J01Reflection.java:12) - Java 문자열의 길이 4
+[2024-10-15 10:24:54] DEBUG J01Reflection.main(J01Reflection.java:13) - Java 문자열의 문자[0] J
+[2024-10-15 10:24:54] DEBUG J01Reflection.main(J01Reflection.java:18) - 리플렉션 Java 문자열의 길이 4
+[2024-10-15 10:28:08] DEBUG J01Reflection.main(J01Reflection.java:12) - Java 문자열의 길이 4
+[2024-10-15 10:28:08] DEBUG J01Reflection.main(J01Reflection.java:13) - Java 문자열의 문자[0] J
+[2024-10-15 10:28:08] DEBUG J01Reflection.main(J01Reflection.java:18) - 리플렉션 Java 문자열의 길이 4
+[2024-10-15 10:28:08] DEBUG J01Reflection.main(J01Reflection.java:23) - Java 문자열의 문자[0] J
+[2024-10-15 10:30:17] DEBUG J01Reflection.main(J01Reflection.java:12) - Java 문자열의 길이 4
+[2024-10-15 10:30:17] DEBUG J01Reflection.main(J01Reflection.java:13) - Java 문자열의 문자[0] J
+[2024-10-15 10:30:17] DEBUG J01Reflection.main(J01Reflection.java:18) - 리플렉션 Java 문자열의 길이 4
+[2024-10-15 10:30:17] DEBUG J01Reflection.main(J01Reflection.java:23) - Java 문자열의 문자[0] J
+[2024-10-15 10:30:17] DEBUG J01Reflection.main(J01Reflection.java:28) - Java 문자열의 문자[0] J
+[2024-10-15 10:30:31] DEBUG J01Reflection.main(J01Reflection.java:12) - Java 문자열의 길이 4
+[2024-10-15 10:30:31] DEBUG J01Reflection.main(J01Reflection.java:13) - Java 문자열의 문자[0] J
+[2024-10-15 10:30:31] DEBUG J01Reflection.main(J01Reflection.java:18) - 리플렉션 Java 문자열의 길이 4
+[2024-10-15 10:30:31] DEBUG J01Reflection.main(J01Reflection.java:23) - Java 문자열의 문자[0] J
+[2024-10-15 10:30:31] DEBUG J01Reflection.main(J01Reflection.java:28) - Java 문자열의 문자[0] J
