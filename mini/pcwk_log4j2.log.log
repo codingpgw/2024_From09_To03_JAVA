@@ -1,0 +1,5 @@
+[2024-10-16 16:21:54] DEBUG FileComment.main(FileComment.java:7) - debug
+[2024-10-16 16:21:54] INFO  FileComment.main(FileComment.java:8) - info
+[2024-10-16 16:21:54] WARN  FileComment.main(FileComment.java:9) - warn
+[2024-10-16 16:21:54] ERROR FileComment.main(FileComment.java:10) - ERROR
+[2024-10-16 16:21:54] FATAL FileComment.main(FileComment.java:11) - fatal

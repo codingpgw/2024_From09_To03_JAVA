@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="installedFeatures">
+		<item value="hu.skzs.multiproperties.handler.java:1.4.0"/>
+		<item value="hu.skzs.multiproperties.handler.text:1.4.0"/>
 		<item value="org.eclipse.egit:6.8.0.202311291450-r"/>
 		<item value="org.eclipse.emf.common:2.32.0.v20240731-0952"/>
 		<item value="org.eclipse.emf.ecore:2.38.0.v20240721-0802"/>

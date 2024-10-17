@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=J19/src&lt;com.pcwk.ehr.cmn{PLog.java[PLog" modifiers="513" timestamp="1728520316267"/>
     <typeInfo handle="=J20/src&lt;com.pcwk.ehr.cmn{PLog.java[PLog" modifiers="513" timestamp="1728520316267"/>
+    <typeInfo handle="=J21/src&lt;com.pcwk.ehr.cmn{PLog.java[PLog" modifiers="513" timestamp="1728520316267"/>
+    <typeInfo handle="=J21/src&lt;com.pcwk.ehr.ed03{Vehicle.java[Vehicle" modifiers="1" timestamp="1728956706910"/>
+    <typeInfo handle="=J21/src&lt;com.pcwk.ehr.ed07{Rentable.java[Rentable" modifiers="513" timestamp="1728974009607"/>
+    <typeInfo handle="=J21/src&lt;com.pcwk.ehr.ed11{Person.java[Person" modifiers="1" timestamp="1728977613528"/>
+    <typeInfo handle="=J21/src&lt;com.pcwk.ehr.ed11{Student.java[Student" modifiers="1" timestamp="1728977653816"/>
+    <typeInfo handle="=J22/src&lt;com.pcwk.ehr.cmn{PLog.java[PLog" modifiers="513" timestamp="1728520316267"/>
 </typeInfoHistroy>

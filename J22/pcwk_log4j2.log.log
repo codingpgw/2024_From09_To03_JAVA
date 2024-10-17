@@ -1,0 +1,87 @@
+[2024-10-16 10:04:35] DEBUG FileComment.main(FileComment.java:7) - debug
+[2024-10-16 10:04:35] INFO  FileComment.main(FileComment.java:8) - info
+[2024-10-16 10:04:35] WARN  FileComment.main(FileComment.java:9) - warn
+[2024-10-16 10:04:35] ERROR FileComment.main(FileComment.java:10) - ERROR
+[2024-10-16 10:04:35] FATAL FileComment.main(FileComment.java:11) - fatal
+[2024-10-16 10:10:38] DEBUG J01ArrayList.main(J01ArrayList.java:16) - list의 요소 크기 : 
+[2024-10-16 10:10:44] DEBUG J01ArrayList.main(J01ArrayList.java:16) - list의 요소 크기 : 3
+[2024-10-16 10:14:54] DEBUG J01ArrayList.main(J01ArrayList.java:16) - list의 요소 크기 : 3
+[2024-10-16 10:14:54] DEBUG J01ArrayList.main(J01ArrayList.java:19) - 요소 : 0, 값 : Pear
+[2024-10-16 10:14:54] DEBUG J01ArrayList.main(J01ArrayList.java:19) - 요소 : 1, 값 : Banana
+[2024-10-16 10:14:54] DEBUG J01ArrayList.main(J01ArrayList.java:19) - 요소 : 2, 값 : Apple
+[2024-10-16 10:14:54] DEBUG J01ArrayList.main(J01ArrayList.java:23) - 요소 : 1, 값 : Watermelon
+[2024-10-16 10:17:25] DEBUG J01ArrayList.main(J01ArrayList.java:16) - list의 요소 크기 : 3
+[2024-10-16 10:17:25] DEBUG J01ArrayList.main(J01ArrayList.java:19) - 요소 : 0, 값 : Pear
+[2024-10-16 10:17:25] DEBUG J01ArrayList.main(J01ArrayList.java:19) - 요소 : 1, 값 : Banana
+[2024-10-16 10:17:25] DEBUG J01ArrayList.main(J01ArrayList.java:19) - 요소 : 2, 값 : Apple
+[2024-10-16 10:17:25] DEBUG J01ArrayList.main(J01ArrayList.java:23) - 요소 : 1, 값 : Watermelon
+[2024-10-16 10:17:25] DEBUG J01ArrayList.main(J01ArrayList.java:26) - Pear가 있어요
+[2024-10-16 10:41:23] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Java
+[2024-10-16 10:41:23] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Oracle
+[2024-10-16 10:41:23] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Html
+[2024-10-16 10:41:23] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Css
+[2024-10-16 10:41:23] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Javascript
+[2024-10-16 10:42:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Java
+[2024-10-16 10:42:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Oracle
+[2024-10-16 10:42:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Html
+[2024-10-16 10:42:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Css
+[2024-10-16 10:42:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Javascript
+[2024-10-16 10:42:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Spring
+[2024-10-16 10:42:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Python
+[2024-10-16 10:42:35] DEBUG J02LinkedList.main(J02LinkedList.java:30) - 요소의 개수 : 7
+[2024-10-16 10:43:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Java
+[2024-10-16 10:43:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Oracle
+[2024-10-16 10:43:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Html
+[2024-10-16 10:43:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Css
+[2024-10-16 10:43:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Javascript
+[2024-10-16 10:43:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Spring
+[2024-10-16 10:43:35] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Python
+[2024-10-16 10:43:35] DEBUG J02LinkedList.main(J02LinkedList.java:30) - 요소의 개수 : 7
+[2024-10-16 10:43:35] DEBUG J02LinkedList.main(J02LinkedList.java:32) - displayLinkedList[1] : Oracle
+[2024-10-16 10:44:33] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Java
+[2024-10-16 10:44:33] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Oracle
+[2024-10-16 10:44:33] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Html
+[2024-10-16 10:44:33] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Css
+[2024-10-16 10:44:33] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Javascript
+[2024-10-16 10:44:33] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Spring
+[2024-10-16 10:44:33] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Python
+[2024-10-16 10:44:33] DEBUG J02LinkedList.main(J02LinkedList.java:30) - 요소의 개수 : 7
+[2024-10-16 10:44:33] DEBUG J02LinkedList.main(J02LinkedList.java:32) - displayLinkedList[1] : Oracle
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Java
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Oracle
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Html
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Css
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Javascript
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Spring
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Python
+[2024-10-16 10:44:52] DEBUG J02LinkedList.main(J02LinkedList.java:30) - 요소의 개수 : 7
+[2024-10-16 10:44:52] DEBUG J02LinkedList.main(J02LinkedList.java:32) - displayLinkedList[1] : Oracle
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Java
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Oracle
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Html
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Css
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Javascript
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Spring Boot
+[2024-10-16 10:44:52] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Python
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Java
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Oracle
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Html
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Css
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Javascript
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Spring
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Python
+[2024-10-16 10:46:13] DEBUG J02LinkedList.main(J02LinkedList.java:30) - 요소의 개수 : 7
+[2024-10-16 10:46:13] DEBUG J02LinkedList.main(J02LinkedList.java:32) - displayLinkedList[1] : Oracle
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Java
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Oracle
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Html
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Css
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Javascript
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Spring Boot
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Python
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Java
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Oracle
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Html
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Javascript
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Spring Boot
+[2024-10-16 10:46:13] DEBUG J02LinkedList.displayLinkedList(J02LinkedList.java:11) - Python

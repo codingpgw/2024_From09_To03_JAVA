@@ -27,15 +27,12 @@ public class movieApp {
 		Scanner sc = new Scanner(System.in);
 		boolean managerId = false; // 관리자 표시
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd"); // 개봉일 형식 변환을 위한 선언
-		makeManagerId();
+//		makeManagerId();
 		loadMovieFile();
 		int userAge = 0;
 		int myWallet = 0;
 		while (true) {
-
-			System.out.println("┌─────────────────────────────────────────┐");
-			System.out.println("│  1.로그인   2.회원가입  3.사이트로 이동  4.종료   │ ");
-			System.out.println("└─────────────────────────────────────────┘");
+			UI.displayMainMenu();
 			System.out.print("메뉴 선택 > ");
 			String menu = sc.nextLine().trim();
 			try (BufferedReader reader = new BufferedReader(new FileReader("members.txt"))) {
@@ -48,14 +45,13 @@ public class movieApp {
 					managerId = Boolean.parseBoolean(data[3]);
 					myWallet = Integer.parseInt(data[4]);
 					userAge = Integer.parseInt(data[5]);
-					Member member = new Member(loginId, loginPass, name, managerId, myWallet,userAge);
+					Member member = new Member(loginId, loginPass, name, managerId, myWallet, userAge);
 					members.add(member); // 읽어온 데이터를 바탕으로 멤버 객체를 생성하고 리스트에 추가
 				}
 			} catch (IOException e) {
 				System.out.println("파일에서 회원 정보를 불러오는 중 오류가 발생했습니다.");
 			}
-			loadReservations();
-			
+
 			if (menu.equals("4")) {
 				System.out.println("프로그램을 종료합니다.");
 				break;
@@ -69,8 +65,8 @@ public class movieApp {
 				String name = sc.nextLine();
 				System.out.print("연령 : ");
 				userAge = sc.nextInt();
-				
-				sc.nextLine(); //nextLine() 사용 후 nextInt() 사용시 그냥 넘어가는 상황 발생
+
+				sc.nextLine(); // nextLine() 사용 후 nextInt() 사용시 그냥 넘어가는 상황 발생
 				while (true) {
 					System.out.print("로그인 아이디 : ");
 					loginId = sc.nextLine().trim();
@@ -96,11 +92,12 @@ public class movieApp {
 					}
 					break;
 				}
-				Member member = new Member(loginId, loginPass, name, managerId, myWallet,userAge);
+				Member member = new Member(loginId, loginPass, name, managerId, myWallet, userAge);
 				members.add(member);
 				try (BufferedWriter writer = new BufferedWriter(new FileWriter("members.txt", true))) {
-					writer.write(loginId + "," + loginPass + "," + name + "," + managerId + "," + myWallet + "," + userAge);
-					writer.newLine(); //회원가입된 유저의 정보를 형식에 따라 파일에 저장
+					writer.write(
+							loginId + "," + loginPass + "," + name + "," + managerId + "," + myWallet + "," + userAge);
+					writer.newLine(); // 회원가입된 유저의 정보를 형식에 따라 파일에 저장
 				} catch (IOException e) {
 					System.out.println("회원 정보를 파일에 저장하는 중 오류가 발생했습니다.");
 				}
@@ -117,7 +114,7 @@ public class movieApp {
 				String loginId = sc.nextLine().trim();
 				System.out.printf("비밀번호 : ");
 				String loginPass = sc.nextLine().trim();
-				Member member = getMemberByLoginId(loginId); //저장된 유저의 정보를 불러와 가입 여부 확인 및 비번 확인
+				Member member = getMemberByLoginId(loginId); // 저장된 유저의 정보를 불러와 가입 여부 확인 및 비번 확인
 
 				if (member == null) {
 					System.out.printf("%s은(는) 존재하지 않는 아이디입니다.\n", loginId);
@@ -128,6 +125,7 @@ public class movieApp {
 					continue;
 				}
 				this.loginedMember = member;
+				loadReservations();
 				System.out.printf("%s님 환영합니다.%n", member.name);
 
 			} else if (menu.equals("3")) {
@@ -136,9 +134,7 @@ public class movieApp {
 					continue;
 				}
 				while (true) {
-					System.out.println("┌─────────────────────────────────────────────────────────────────────────┐");
-					System.out.println("│ 1.상영중인 영화 조회  2.영화 검색  3.영화 예매  4.개인 정보 확인  5.관리자 모드  6.로그아웃 │");
-					System.out.println("└─────────────────────────────────────────────────────────────────────────┘");
+					UI.displaySiteMenu();
 					System.out.print("메뉴 선택 > ");
 					String internalMenu = sc.nextLine().trim();
 
@@ -146,9 +142,9 @@ public class movieApp {
 						if (isLogined()) {
 							System.out.println("로그아웃 되었습니다.");
 							this.loginedMember = null;
-							break; //로그인 정보 제거
+							break; // 로그인 정보 제거
 						}
-						
+
 					} else if (internalMenu.equals("1")) {
 						System.out.println("영화 제목  |       개봉일    |  감독  | 연령 제한  |  평점");
 						for (MovieList movieInfo : movieInfos) {
@@ -160,18 +156,18 @@ public class movieApp {
 					} else if (internalMenu.equals("2")) {
 						System.out.print("검색하실 영화를 입력해주세요. > ");
 						String searchMovie = sc.nextLine().trim();
-						
-						for(MovieList movieInfo : movieInfos) {
+
+						for (MovieList movieInfo : movieInfos) {
 							System.out.println("영화 제목  |       개봉일    |  감독  | 연령 제한  |  평점");
-							if(searchMovie.equals(movieInfo.movieName)|| //제목, 감독, 출시일 일치 여부
+							if (searchMovie.equals(movieInfo.movieName) || // 제목, 감독, 출시일 일치 여부
 									searchMovie.equals(movieInfo.supervision)
-									||searchMovie.equals(movieInfo.date.format(formatter))){
+									|| searchMovie.equals(movieInfo.date.format(formatter))) {
 								System.out.printf("%s	|   %s	 |  %s  |  %2d   |  %.2f\n", movieInfo.movieName,
 										movieInfo.date.format(formatter), movieInfo.supervision, movieInfo.ageLimit,
 										movieInfo.rating);
 							}
 						}
-						
+
 					} else if (internalMenu.equals("3")) {
 						System.out.println("영화 제목  |       개봉일    |  감독  | 연령 제한  |  평점");
 						for (MovieList movieInfo : movieInfos) {
@@ -179,56 +175,55 @@ public class movieApp {
 									movieInfo.date.format(formatter), movieInfo.supervision, movieInfo.ageLimit,
 									movieInfo.rating);
 						}
-						MovieList selectedMovie = null; //고른 영화의 정보 호출 준비
-						try { //영화 예매 시 띄어쓰기를 안 하고 제목 입력시 나오는 에러 잡기
+						MovieList selectedMovie = null; // 고른 영화의 정보 호출 준비
+						try { // 영화 예매 시 띄어쓰기를 안 하고 제목 입력시 나오는 에러 잡기
 							System.out.print("관람하실 영화의 제목을 입력해주세요. > ");
 							String choiceMovie = sc.nextLine().trim();
 							for (MovieList movieInfo : movieInfos) {
 								if (movieInfo.movieName.equals(choiceMovie)) {
-									selectedMovie = movieInfo; //movieInfo 리스트에 있는 목록 중 이름 일치하는 정보 호출
+									selectedMovie = movieInfo; // movieInfo 리스트에 있는 목록 중 이름 일치하는 정보 호출
 									break;
 								}
 							}
-							if(loginedMember.age < selectedMovie.ageLimit) { //로그인 되어 있는 계정 나이와 영화 연령제한 검사
+							if (loginedMember.age < selectedMovie.ageLimit) { // 로그인 되어 있는 계정 나이와 영화 연령제한 검사
 								System.out.println("적정 연령이 아닙니다.");
 								continue;
 							}
-						    System.out.println("좌석을 선택해 주세요.");
-						    selectedMovie.displaySeats();//영화 좌석 -> 빈 좌석 □
-						    System.out.print("원하시는 좌석 번호를 선택해주세요 (ex)2 2) ");
-						    int row = sc.nextInt();
-						    int col = sc.nextInt();
-						    
-						    sc.nextLine();
-						    selectedMovie.bookSeat(row-1, col-1);//입력 좌석 예매 후 ■
-						 
-						    if (selectedMovie != null) {
-						        // 예매 금액 설정 (예시로 10,000원)
-						    	int ticketPrice = 12000;
-						    	if(loginedMember.age < 18) { 
-						    		ticketPrice = 8000;
-						    	}
-						        if (loginedMember.wallet >= ticketPrice) {
-						            loginedMember.wallet -= ticketPrice;
-						            System.out.printf("%s 영화를 예매하셨습니다. 현재 잔액은 %d원입니다.\n", selectedMovie.movieName, loginedMember.wallet);
-						            saveReservation(loginedMember, selectedMovie, row, col); // 예매 정보 저장
-						            updateMovieFile(); // 영화 정보 업데이트
-						            updateMemberFile(); // 회원 정보 업데이트
-						            // 예매 정보를 사용자 데이터에 추가 (나중에 확인, 취소 가능하게)
-						            loginedMember.addReservation(selectedMovie);
-						            selectedMovie.displaySeats();
-						        } else {
-						            System.out.println("잔액이 부족하여 예매할 수 없습니다.");
-						        }
-						    }						
-						}catch(NullPointerException e) {
+							System.out.println("좌석을 선택해 주세요.");
+							selectedMovie.displaySeats();// 영화 좌석 -> 빈 좌석 □
+							System.out.print("원하시는 좌석 번호를 선택해주세요 (ex)2 2) ");
+							int row = sc.nextInt();
+							int col = sc.nextInt();
+							sc.nextLine();
+
+							if (selectedMovie != null) {
+								// 예매 금액 설정 (예시로 10,000원)
+								int ticketPrice = 12000;
+								if (loginedMember.age < 18) {
+									ticketPrice = 8000;
+								}
+								if (loginedMember.wallet >= ticketPrice) {
+									selectedMovie.bookSeat(row - 1, col - 1);// 입력 좌석 예매 후 ■
+									loginedMember.wallet -= ticketPrice;
+									System.out.printf("%s 영화를 예매하셨습니다. 현재 잔액은 %d원입니다.\n", selectedMovie.movieName,
+											loginedMember.wallet);
+									saveReservation(loginedMember, selectedMovie, row, col); // 예매 정보 저장
+									updateMovieFile(); // 영화 정보 업데이트
+									updateMemberFile(); // 회원 정보 업데이트
+									// 예매 정보를 사용자 데이터에 추가 (나중에 확인, 취소 가능하게)
+									loginedMember.addReservation(selectedMovie);
+									selectedMovie.displaySeats();
+								} else {
+									System.out.println("잔액이 부족하여 예매할 수 없습니다.");
+									continue;
+								}
+							}
+						} catch (NullPointerException e) {
 							System.out.println("영화 제목을 띄어쓰기도 포함하여 작성해주세요.");
 						}
-						
+
 					} else if (internalMenu.equals("4")) {
-						System.out.println("┌───────────────────────────────────────────────────────────┐");
-						System.out.println("│ 1.개인 정보 수정  2.예매한 영화 확인  3.나의 지갑  4.회원 탈퇴  5.나가기  │");
-						System.out.println("└───────────────────────────────────────────────────────────┘");
+						UI.displayPersonalMenu();
 						System.out.print("메뉴 선택 > ");
 						String personalMenu = sc.nextLine();
 						if (personalMenu.equals("5")) {
@@ -239,7 +234,7 @@ public class movieApp {
 
 							Member changeMemberData = null;
 
-							for (Member member : members) { //passCheck이 저장된 번호가 같은 시 정보 호출
+							for (Member member : members) { // passCheck이 저장된 번호가 같은 시 정보 호출
 								if (loginedMember != null && passCheck.equals(loginedMember.pass)) {
 									changeMemberData = loginedMember;
 									break;
@@ -248,15 +243,13 @@ public class movieApp {
 
 							if (changeMemberData != null) {
 								System.out.println("변경하실 정보를 골라주세요.");
-								System.out.println("┌────────────────┐");
-								System.out.println("│ 1.이름  2.비밀번호 │");
-								System.out.println("└────────────────┘");
+								UI.displayChangeMenu();
 								System.out.print("메뉴 선택 > ");
 								String changeMenu = sc.nextLine();
 								if (changeMenu.equals("1") || changeMenu.trim().equals("이름")) {
 									System.out.print("새로운 이름 입력 : ");
 									String newName = sc.nextLine().trim();
-									//새로 입력받은 정보를 가져온 changeMemberData에 입력
+									// 새로 입력받은 정보를 가져온 changeMemberData에 입력
 									changeMemberData.name = newName;
 									System.out.println("변경이 완료되었습니다.");
 									updateMemberFile();
@@ -266,7 +259,7 @@ public class movieApp {
 
 									changeMemberData.pass = newPassword;
 									System.out.println("변경이 완료되었습니다.");
-									updateMemberFile(); //확인 필요
+									updateMemberFile(); // 확인 필요
 								} else {
 									System.out.println("유효하지 않은 명령입니다.");
 								}
@@ -275,47 +268,46 @@ public class movieApp {
 							}
 
 						} else if (personalMenu.equals("2")) {
-								//계정마다 저장된 예약정보 호출
-							 List<MovieList> reservations = loginedMember.getReservations(); 
-							    if (reservations.isEmpty()) { //isEmpty 함수를 통해 예약 정보 null 여부 확인
-							        System.out.println("예매한 영화가 없습니다.");
-							    } else {
-							        System.out.println("예매한 영화 목록:");
-							        for (MovieList reservation : reservations) {
-							            System.out.printf("영화: %s | 개봉일: %s | 감독: %s\n",
-							                    reservation.movieName, reservation.date.format(formatter), reservation.supervision);
-							        }
-							        System.out.print("예매 취소할 영화의 제목을 입력해주세요. (취소하지 않으려면 엔터): ");
-							        String cancelMovie = sc.nextLine().trim();
-							        if (!cancelMovie.isEmpty()) {
-							            MovieList movieToCancel = null;
-							            for (MovieList reservation : reservations) {
-							                if (reservation.movieName.equals(cancelMovie)) {
-							                    movieToCancel = reservation;
-							                    break;
-							                }//취소를 입력한 제목의 영화가 있는지 확인
-							            }
-							            if (movieToCancel != null) {
-							                loginedMember.cancelReservation(movieToCancel);
-							                if(loginedMember.age < 18) {
-							                	loginedMember.wallet += 8000;  
-							                }else {
-							                	loginedMember.wallet += 12000;  							                	
-							                }//환불
-							                System.out.printf("%s 영화의 예매가 취소되었습니다. 현재 잔액은 %d원입니다.\n", movieToCancel.movieName, loginedMember.wallet);
-							                
-							                updateMovieFile(); // 영화 정보 업데이트
-							                updateMemberFile(); // 회원 정보 업데이트
-							            } else {
-							                System.out.println("입력한 영화가 예매 목록에 없습니다.");
-							            }
-							        }
-							    }
+							// 계정마다 저장된 예약정보 호출
+							List<MovieList> reservations = loginedMember.getReservations();
+							if (reservations.isEmpty()) { // isEmpty 함수를 통해 예약 정보 null 여부 확인
+								System.out.println("예매한 영화가 없습니다.");
+							} else {
+								System.out.println("예매한 영화 목록:");
+								for (MovieList reservation : reservations) {
+									System.out.printf("영화: %s | 개봉일: %s | 감독: %s\n", reservation.movieName,
+											reservation.date.format(formatter), reservation.supervision);
+								}
+								System.out.print("예매 취소할 영화의 제목을 입력해주세요. (취소하지 않으려면 엔터): ");
+								String cancelMovie = sc.nextLine().trim();
+								if (!cancelMovie.isEmpty()) {
+									MovieList movieToCancel = null;
+									for (MovieList reservation : reservations) {
+										if (reservation.movieName.equals(cancelMovie)) {
+											movieToCancel = reservation;
+											break;
+										} // 취소를 입력한 제목의 영화가 있는지 확인
+									}
+									if (movieToCancel != null) {
+										loginedMember.cancelReservation(movieToCancel);
+										if (loginedMember.age < 18) {
+											loginedMember.wallet += 8000;
+										} else {
+											loginedMember.wallet += 12000;
+										} // 환불
+										System.out.printf("%s 영화의 예매가 취소되었습니다. 현재 잔액은 %d원입니다.\n",
+												movieToCancel.movieName, loginedMember.wallet);
+
+										updateMemberFile(); // 회원 정보 업데이트
+										deleteReservations();
+									} else {
+										System.out.println("입력한 영화가 예매 목록에 없습니다.");
+									}
+								}
+							}
 						} else if (personalMenu.equals("3")) {
 							System.out.printf("%s 고객님은 현재 %d원을 보유 중입니다.\n", loginedMember.name, loginedMember.wallet);
-							System.out.println("┌────────────────┐");
-							System.out.println("│ 1.충전  2.나가기  │");
-							System.out.println("└────────────────┘");
+							UI.displayChargeMenu();
 
 							System.out.print("메뉴 선택 > ");
 							String walletMenu = sc.nextLine();
@@ -350,6 +342,7 @@ public class movieApp {
 								break;
 							} else if (WithdrawalChoice.equals("1")) {
 								Member Withdrawal = callMemberData(loginedMember.id);
+								// 멤버 정보를 현재 로그인된 ID 정보로 불러낸 후 삭제 후 파일 덮어쓰기 메소드
 								deleteMemberFromFile(Withdrawal);
 								loginedMember = null;
 								System.out.println("회원 탈퇴가 완료되었습니다.");
@@ -362,10 +355,8 @@ public class movieApp {
 							System.out.println("유효하지 않은 명령입니다.");
 						}
 					} else if (internalMenu.equals("5")) {
-						if (loginedMember != null && loginedMember.manager) {
-							System.out.println("┌───────────────────────────────────────────────────┐");
-							System.out.println("│ 1.영화 목록 등록  2.영화 목록 삭제  3.유저 계정 관리  4.나가기  │");
-							System.out.println("└───────────────────────────────────────────────────┘");
+						if (loginedMember != null && loginedMember.manager) { // 해당 유저의 정보가 true일 경우 이용가능
+							UI.displayManagerMenu();
 							System.out.print("메뉴 선택 > ");
 							int managerMenu = sc.nextInt();
 							sc.nextLine();
@@ -384,11 +375,11 @@ public class movieApp {
 
 								LocalDate releaseDate = LocalDate.parse(date,
 										DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-
+								// 입력받은 영화의 정보를 movieInfo 리스트에 저장
 								MovieList movieInfo = new MovieList(title, releaseDate, supervision,
 										Integer.parseInt(ageLimit), Double.parseDouble(rating));
 								movieInfos.add(movieInfo);
-								updateMovieFile();
+								updateMovieFile(); // 추가된 영화 정보를 갱신
 								System.out.println("영화가 등록되었습니다.");
 								continue;
 							case 2:
@@ -401,7 +392,7 @@ public class movieApp {
 									System.out.printf("%s의 제목인 영화는 존재하지 않습니다\n", deleteInfo);
 									continue;
 								}
-
+								// 제목이 일치하는 영화의 정보 삭제후 갱신
 								movieInfos.remove(foundMovie);
 								updateMovieFile();
 								System.out.printf("%s 영화가 목록에서 삭제되었습니다\n", deleteInfo);
@@ -410,10 +401,11 @@ public class movieApp {
 							case 3:
 								System.out.println("------유저 목록------");
 								System.out.println("이름 \t ID \t 소지금");
-								
+
 								for (Member member : members) {
-									if(member.manager == false) {
-										System.out.printf("%s \t %s \t %d \t %d\n", member.id, member.name, member.wallet,member.age);										
+									if (member.manager == false) {
+										System.out.printf("%s \t %s \t %d \t %d\n", member.id, member.name,
+												member.wallet, member.age);
 									}
 								}
 								continue;
@@ -433,12 +425,12 @@ public class movieApp {
 			} else {
 				System.out.println("유효하지 않은 명령입니다.");
 			}
-			sc.close();
+
 		}
 
 	}
 
-	private MovieList callMovieData(String movieName) {
+	private MovieList callMovieData(String movieName) { // movieInfo의 정보를 읽어오는 메소드
 		for (int i = 0; i < movieInfos.size(); i++) {
 			MovieList movieInfo = movieInfos.get(i);
 
@@ -449,7 +441,7 @@ public class movieApp {
 		return null;
 	}
 
-	private Member callMemberData(String id) {
+	private Member callMemberData(String id) { // member의 정보를 읽어오는 메소드
 		for (int i = 0; i < members.size(); i++) {
 			Member member = members.get(i);
 
@@ -460,15 +452,15 @@ public class movieApp {
 		return null;
 	}
 
-	private void makeManagerId() {
+	private void makeManagerId() { // 임의로 만들어낸 관리자 정보
 		members.add(new Member("manager", "1234", "manager", true, 0, 20));
 	}
 
-	private boolean isLogined() {
+	private boolean isLogined() { // 로그인된 상태인지 확인하는 메소드
 		return this.loginedMember != null;
 	}
 
-	private boolean isLoginIdDup(String loginId) {
+	private boolean isLoginIdDup(String loginId) { // 아이디 중복 생성 방지 메소드
 		for (Member member : members) {
 
 			if (member.id.equals(loginId)) {
@@ -478,7 +470,7 @@ public class movieApp {
 		return true;
 	}
 
-	private Member getMemberByLoginId(String id) {
+	private Member getMemberByLoginId(String id) { // 특정 아이디 정보 호출 메소드
 		for (Member member : members) {
 
 			if (member.id.equals(id)) {
@@ -488,7 +480,7 @@ public class movieApp {
 		return null;
 	}
 
-	public void deleteMemberFromFile(Member memberIdToDelete) {
+	public void deleteMemberFromFile(Member memberIdToDelete) { // 회원 탈퇴 시 파일에 해당 유저의 정보 삭제 후 덮어쓰기
 		List<Member> members = new ArrayList<>();
 
 		// 1. 파일에서 모든 데이터를 읽어오기
@@ -517,52 +509,56 @@ public class movieApp {
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter("members.txt"))) {
 			for (Member member : members) {
 				writer.write(member.id + "," + member.pass + "," + member.name + "," + member.manager + ","
-						+ member.wallet + "," + member.age);
+						+ member.wallet + "," + member.age); // 해당 형태로 저장
 				writer.newLine();
 			}
 		} catch (IOException e) {
 			System.out.println("파일을 저장하는 중 오류가 발생했습니다.");
 		}
 	}
-	public void updateMemberFile() {
-	    try (BufferedWriter writer = new BufferedWriter(new FileWriter("members.txt"))) {
-	        for (Member member : members) {
-	            writer.write(member.id + "," + member.pass + "," + member.name + ","
-	                    + member.manager + "," + member.wallet + "," + member.age);
-	            writer.newLine();
-	        }
-	    } catch (IOException e) {
-	        System.out.println("회원 정보를 파일에 저장하는 중 오류가 발생했습니다.");
-	    }
+
+	public void updateMemberFile() { // 유저의 금액이나 정보에 변동이 있을 시 갱신하는 메소드
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter("members.txt"))) {
+			for (Member member : members) {
+				writer.write(member.id + "," + member.pass + "," + member.name + "," + member.manager + ","
+						+ member.wallet + "," + member.age);
+				writer.newLine();
+			}
+		} catch (IOException e) {
+			System.out.println("회원 정보를 파일에 저장하는 중 오류가 발생했습니다.");
+		}
 	}
-	public void updateMovieFile() {
-	    try (BufferedWriter writer = new BufferedWriter(new FileWriter("movies.txt"))) {
-	        for (MovieList movie : movieInfos) {
-	            writer.write(movie.movieName + "," + movie.date + "," + movie.supervision + "," +
-	                    movie.ageLimit + "," + movie.rating + ",");
-	            
-	            // 좌석 상태를 파일에 저장 (행별로 구분)
-	            for (char[] row : movie.seats) {
-	                for (char seat : row) {
-	                    writer.write(seat); // '□' 또는 '■'
-	                }
-	                writer.write(";"); // 행 구분자
-	            }
-	            writer.newLine();
-	        }
-	    } catch (IOException e) {
-	        System.out.println("영화 정보를 파일에 저장하는 중 오류가 발생했습니다.");
-	    }
+
+	public void updateMovieFile() { // 영화 정보에 관해 좌석 예매 같은 정보를 저장하는 메소드
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter("movies.txt"))) {
+			for (MovieList movie : movieInfos) {
+				writer.write(movie.movieName + "," + movie.date + "," + movie.supervision + "," + movie.ageLimit + ","
+						+ movie.rating + ",");
+
+				// 좌석 상태를 파일에 저장 (행별로 구분)
+				for (char[] row : movie.seats) {
+					for (char seat : row) {
+						writer.write(seat); // '□' 또는 '■'
+					}
+					writer.write(";"); // 행 구분자
+				}
+				writer.newLine();
+			}
+		} catch (IOException e) {
+			System.out.println("영화 정보를 파일에 저장하는 중 오류가 발생했습니다.");
+		}
 	}
+
 	public void saveReservation(Member member, MovieList movie, int row, int col) {
-	    try (BufferedWriter writer = new BufferedWriter(new FileWriter("reservations.txt", true))) {
-	        writer.write(member.id + "," + movie.movieName + "," + row + "," + col);
-	        writer.newLine();
-	    } catch (IOException e) {
-	        System.out.println("예매 정보를 파일에 저장하는 중 오류가 발생했습니다.");
-	    }
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter("reservations.txt", true))) {
+			writer.write(member.id + "," + movie.movieName + "," + row + "," + col);
+			writer.newLine(); // 당사자 확인 및 좌석 저장 기능
+		} catch (IOException e) {
+			System.out.println("예매 정보를 파일에 저장하는 중 오류가 발생했습니다.");
+		}
 	}
-	public void loadMovieFile() {
+
+	public void loadMovieFile() { // 영화의 정보를 불러오는 메소드
 		DateTimeFormatter movieFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		try (BufferedReader reader = new BufferedReader(new FileReader("movies.txt"))) {
 			String line;
@@ -573,9 +569,9 @@ public class movieApp {
 				String supervision = data[2];
 				int ageLimit = Integer.parseInt(data[3]);
 				double rating = Double.parseDouble(data[4]);
-				
+
 				LocalDate date = LocalDate.parse(dateString, movieFormatter);
-				
+				// 날짜 정보를 불러오기 위한 형변환
 				MovieList movieInfo = new MovieList(movieName, date, supervision, ageLimit, rating);
 				movieInfos.add(movieInfo); // 읽어온 데이터를 바탕으로 멤버 객체를 생성하고 리스트에 추가
 			}
@@ -583,24 +579,45 @@ public class movieApp {
 			System.out.println("파일에서 영화 정보를 불러오는 중 오류가 발생했습니다.");
 		}
 	}
-	public void loadReservations() {
-	    try (BufferedReader reader = new BufferedReader(new FileReader("reservations.txt"))) {
-	        String line;
-	        while ((line = reader.readLine()) != null) {
-	            String[] data = line.split(",");
-	            String memberId = data[0];
-	            String movieName = data[1];
-	            int row = Integer.parseInt(data[2]);
-	            int col = Integer.parseInt(data[3]);
 
-	            // 해당 영화와 좌석 정보를 업데이트
-	            MovieList movie = callMovieData(movieName);
-	            if (movie != null) {
-	                movie.seats[row-1][col-1] = '■';
-	            }
-	        }
-	    } catch (IOException e) {
-	        System.out.println("예매 정보를 파일에서 불러오는 중 오류가 발생했습니다.");
-	    }
+	public void loadReservations() { // 각 영화의 좌석 정보를 저장
+		try (BufferedReader reader = new BufferedReader(new FileReader("reservations.txt"))) {
+			String line;
+			while ((line = reader.readLine()) != null) {
+				String[] data = line.split(",");
+				String memberId = data[0];
+				String movieName = data[1];
+				int row = Integer.parseInt(data[2]);
+				int col = Integer.parseInt(data[3]);
+
+				// 해당 영화와 좌석 정보를 업데이트
+				MovieList movie = callMovieData(movieName);
+				if (movie != null) {
+					movie.seats[row - 1][col - 1] = '■'; // 배열 0,0 시작을 1,1로 표시
+				}
+			}
+		} catch (IOException e) {
+			System.out.println("예매 정보를 파일에서 불러오는 중 오류가 발생했습니다.");
+		}
+	}
+
+	public void deleteReservations() {
+		try (BufferedReader reader = new BufferedReader(new FileReader("reservations.txt"))) {
+			String line;
+			while ((line = reader.readLine()) != null) {
+				String[] data = line.split(",");
+				String memberId = data[0];
+				String movieName = data[1];
+				int row = Integer.parseInt(data[2]);
+				int col = Integer.parseInt(data[3]);
+
+				MovieList movie = callMovieData(movieName);
+				if (movie != null) {
+					movie.seats[row - 1][col - 1] = '□'; // 배열 0,0 시작을 1,1로 표시
+				}
+			}
+		} catch (IOException e) {
+			System.out.println("파일을 읽는 중 오류가 발생했습니다.");
+		}
 	}
 }
