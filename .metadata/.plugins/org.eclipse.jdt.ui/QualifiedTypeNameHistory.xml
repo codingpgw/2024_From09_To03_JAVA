@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.ed05.Box"/>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.ed06.Product"/>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.ed07.HomeAgency"/>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.ed07.CarAgency"/>
-    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.ed10.NumericBox"/>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.ed11.Application"/>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.ed01.Member"/>
-    <fullyQualifiedTypeName name="java.awt.desktop.AboutEvent"/>
-    <fullyQualifiedTypeName name="java.util.Vector"/>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.projectTest.FileHandler"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.ed02.Member"/>
-    <fullyQualifiedTypeName name="java.util.Set"/>
-    <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
@@ -31,7 +16,6 @@
     <fullyQualifiedTypeName name="com.pcwk.ehr.member.MemberDao"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
-    <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.cmn.UI"/>
@@ -40,11 +24,7 @@
     <fullyQualifiedTypeName name="com.pcwk.ehr.member.MemberVO"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.movie.MovieDaoMain"/>
     <fullyQualifiedTypeName name="com.pcwk.ehr.movie.MovieVO"/>
-    <fullyQualifiedTypeName name="com.pcwk.ehr.movie.MovieDao"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.lang.model.util.ElementScanner7"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FilterOutputStream"/>
     <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
@@ -53,11 +33,31 @@
     <fullyQualifiedTypeName name="org.jsoup.select.Elements"/>
     <fullyQualifiedTypeName name="org.jsoup.nodes.Element"/>
     <fullyQualifiedTypeName name="java.net.URL"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.OutputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.net.MalformedURLException"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.ed02.User"/>
+    <fullyQualifiedTypeName name="java.net.URLEncoder"/>
+    <fullyQualifiedTypeName name="java.net.HttpURLConnection"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.io.PrintStream"/>
+    <fullyQualifiedTypeName name="java.io.FileDescriptor"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.nio.file.StandardCopyOption"/>
+    <fullyQualifiedTypeName name="java.nio.charset.StandardCharsets"/>
+    <fullyQualifiedTypeName name="com.pcwk.ehr.movie.MovieDao"/>
 </qualifiedTypeNameHistroy>

@@ -89,7 +89,10 @@ public class MemberVO extends DTO{
 		this.reservations = new ArrayList<>(); //초기화
 	}
 	public void addReservation(MovieVO movie) {
-		reservations.add(movie); // 예매 정보 추가
+	    if (this.reservations == null) {
+	        this.reservations = new ArrayList<>();
+	    }
+	    this.reservations.add(movie);
 	}
 
 	public void cancelReservation(MovieVO movie) {

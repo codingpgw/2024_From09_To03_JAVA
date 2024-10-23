@@ -23,7 +23,17 @@ public class MovieVO extends DTO {
 		initializeSeats();
 	}
 	
-	  public String getMovieName() {
+
+	public MovieVO() {
+	
+	}
+
+
+	public MovieVO(String movieName) {
+		this.movieName = movieName;
+	}
+
+	public String getMovieName() {
 		return movieName;
 	}
 
@@ -93,8 +103,6 @@ public class MovieVO extends DTO {
 		this.seats = seats;
 	}
 
-
-
 	// 좌석 초기화 메서드
     private void initializeSeats() {
         for (int i = 0; i < seats.length; i++) {
@@ -113,6 +121,7 @@ public class MovieVO extends DTO {
 	        System.out.println();
 	    }
 	}
+	
 	public void bookSeat(int row, int col) {
 	    if (seats[row][col] == '■') {
 	        System.out.println("이미 예매된 좌석입니다. 다른 좌석을 선택해 주세요.");
@@ -121,11 +130,30 @@ public class MovieVO extends DTO {
 	        System.out.println("좌석이 성공적으로 예매되었습니다.");
 	    }
 	}
+	
+	public String seatsToString() {
+	    StringBuilder sb = new StringBuilder();
+	    for (char[] row : seats) {
+	        for (char seat : row) {
+	            sb.append(seat);
+	        }
+	        sb.append(";"); // 각 행의 좌석 끝에 구분자를 추가합니다.
+	    }
+	    return sb.toString();
+	}
 
-	@Override
-	public String toString() {
-		return "MovieVO [movieName=" + movieName + ", date=" + date + ", supervision=" + supervision + ", ageLimit="
-				+ ageLimit + ", rating=" + rating + "]";
+	// CSV에서 읽을 때 사용하기 위한 메서드
+	public void stringToSeats(String seatData) {
+	    String[] rows = seatData.split(";");
+	    for (int i = 0; i < rows.length; i++) {
+	        for (int j = 0; j < rows[i].length(); j++) {
+	            seats[i][j] = rows[i].charAt(j);
+	        }
+	    }
+	}
+	
+	public String toFileFormat() {
+	    return movieName + "," + date + "," + supervision + "," + ageLimit + "," + rating + "," + seatsToString() ;
 	}
 	
 	

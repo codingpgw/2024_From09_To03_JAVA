@@ -15,7 +15,6 @@ public class MemberDao implements WorkDiv<MemberVO> {
 	public MemberDao() {
 		super();
 		int count = readFile(fileName);
-	    removeDuplicates();
 	}
 
 	public void displayList(List<MemberVO> list) {
@@ -57,6 +56,7 @@ public class MemberDao implements WorkDiv<MemberVO> {
 
 	@Override
 	public int doSave(MemberVO vo) {
+		removeDuplicates();
 		// param 입력된 데이터를 members 추가.
 		// 입력전에 memberId check 필요
 		int flag = 0;
@@ -166,22 +166,34 @@ public class MemberDao implements WorkDiv<MemberVO> {
 	}
 
 	public MemberVO StringtoMember(String data) {
-		MemberVO out = null;
+	    MemberVO out = null;
 
-		String memberStr = data;
-		
-		String[] memberArr = memberStr.split(",");
-		
-		String walletStr = memberArr[4].trim(); // 불필요한 공백 제거
-	    String ageStr = memberArr[5].trim();
+	    // Null 또는 빈 문자열 체크
+	    if (data == null || data.isEmpty()) {
+	        System.out.println("입력된 데이터가 null이거나 비어 있습니다.");
+	        return out;
+	    }
 
-	    String id = memberArr[0];
-	    String pass = memberArr[1];
-	    String name = memberArr[2];
-	    boolean manager = Boolean.parseBoolean(memberArr[3]);
-	    int wallet = Integer.parseInt(walletStr.replaceAll("[^0-9]", ""));
-	    int age = Integer.parseInt(ageStr.replaceAll("[^0-9]", ""));
-	    out = new MemberVO(id, pass, name, manager, wallet, age);
+	    String[] memberArr = data.split(",");
+
+	    // 배열의 길이가 충분한지 검사
+	    if (memberArr.length < 6) {
+	        System.out.println("잘못된 데이터 형식입니다. 필요한 정보가 부족합니다.");
+	        return out;
+	    }
+
+	    try {
+	        String id = memberArr[0];
+	        String pass = memberArr[1];
+	        String name = memberArr[2];
+	        boolean manager = Boolean.parseBoolean(memberArr[3]);
+	        int wallet = Integer.parseInt(memberArr[4]);
+	        int age = Integer.parseInt(memberArr[5]);
+	        out = new MemberVO(id, pass, name, manager, wallet, age);
+	    } catch (NumberFormatException e) {
+	        System.out.println("숫자 형식 변환 중 오류가 발생했습니다: " + e.getMessage());
+	    }
+
 	    return out;
 	}
 
@@ -192,6 +204,11 @@ public class MemberDao implements WorkDiv<MemberVO> {
 
 			String data = "";
 			while ((data = br.readLine()) != null) {
+				 data = data.trim(); // 데이터의 공백 제거
+		            // 빈 줄이면 넘어가기
+		            if (data.isEmpty()) {
+		                continue; // 빈 줄을 무시
+		            }
 				MemberVO outVO = StringtoMember(data);
 				members.add(outVO);
 			}

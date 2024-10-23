@@ -27,6 +27,7 @@ public class MemberDaoMain {
 		
 		memberDao.readFile("member.csv");
 		while(true) {
+			memberDao.removeDuplicates();
 			UI.displayMainMenu();
 			System.out.print("메뉴 선택 > ");
 			String menu = sc.nextLine().trim();

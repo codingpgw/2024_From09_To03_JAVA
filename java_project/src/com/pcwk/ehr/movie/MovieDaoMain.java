@@ -56,6 +56,12 @@ public class MovieDaoMain {
 	}
 
 	public void bookMovie(MemberVO loginedMember) {
+		try {
+			movieDao.readFile("movie.csv");
+			loadReservations(memberDao.members);
+		} catch (java.lang.ArrayIndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());
+		}
 		movieDao.readFile("movie.csv");
 		displayMovies();
 		MovieVO selectedMovie = null;
@@ -89,6 +95,7 @@ public class MovieDaoMain {
 				loginedMember.setWallet(loginedMember.getWallet() - ticketPrice);
 				System.out.printf("%s 영화를 예매하셨습니다. 현재 잔액은 %d원입니다.\n", selectedMovie.getMovieName(),
 						loginedMember.getWallet());
+
 				loginedMember.addReservation(selectedMovie);
 				saveReservation(loginedMember, selectedMovie, row, col);
 				selectedMovie.displaySeats();
@@ -103,7 +110,6 @@ public class MovieDaoMain {
 	}
 
 	public void verifyInfo(MemberVO loginedMember) {
-		loadReservations();
 		System.out.print("메뉴 선택 > ");
 		String personalMenu = sc.nextLine();
 		if (personalMenu.equals("5")) {
@@ -148,18 +154,36 @@ public class MovieDaoMain {
 			}
 
 		} else if (personalMenu.equals("2")) {
+			
+			movieDao.readFile("movie.csv");
+			loadReservations(memberDao.members);
+
 			// 계정마다 저장된 예약정보 호출
 			List<MovieVO> reservations = loginedMember.getReservations();
+
 			if (reservations.isEmpty()) { // isEmpty 함수를 통해 예약 정보 null 여부 확인
 				System.out.println("예매한 영화가 없습니다.");
 			} else {
 				System.out.println("예매한 영화 목록:");
-				for (MovieVO reservation : reservations) {
-					System.out.printf("영화: %s | 개봉일: %s | 감독: %s\n", reservation.getMovieName(),
-							reservation.getDate().format(formatter), reservation.getSupervision());
-				}
+				 // movieDao에서 불러온 영화 정보들과 예약 정보 비교
+		        for (MovieVO reservation : reservations) {
+		            // 예약한 영화와 movieDao.movieList에서 일치하는 영화 찾기
+		            MovieVO matchedMovie = callMovieData(reservation.getMovieName());
+		            
+		            if (matchedMovie != null && matchedMovie.getDate() != null) {
+		                System.out.printf("영화: %s | 개봉일: %s | 감독: %s\n",
+		                    matchedMovie.getMovieName(),
+		                    matchedMovie.getDate().format(formatter),  // null이 아닐 경우에만 호출
+		                    matchedMovie.getSupervision());
+		            } else {
+		                System.out.printf("영화: %s | 개봉일 정보가 없습니다 | 감독: %s\n",
+		                    reservation.getMovieName(),
+		                    reservation.getSupervision());
+		            }
+		        }
 				System.out.print("예매 취소할 영화의 제목을 입력해주세요. (취소하지 않으려면 엔터): ");
 				String cancelMovie = sc.nextLine().trim();
+				
 				if (!cancelMovie.isEmpty()) {
 					MovieVO movieToCancel = null;
 					for (MovieVO reservation : reservations) {
@@ -177,9 +201,10 @@ public class MovieDaoMain {
 						} // 환불
 						System.out.printf("%s 영화의 예매가 취소되었습니다. 현재 잔액은 %d원입니다.\n", movieToCancel.getMovieName(),
 								loginedMember.getWallet());
-
+						
 						memberDao.doUpdate(loginedMember);
 						deleteReservations(cancelMovie);
+						
 
 					} else {
 						System.out.println("입력한 영화가 예매 목록에 없습니다.");
@@ -223,7 +248,8 @@ public class MovieDaoMain {
 			} else if (WithdrawalChoice.equals("1")) {
 				MemberVO withdrawal = memberDao.doSelectOne(loginedMember);
 				// 멤버 정보를 현재 로그인된 ID 정보로 불러낸 후 삭제 후 파일 덮어쓰기 메소드
-				memberDao.doDelete(withdrawal);
+				//memberDao.doDelete(withdrawal);
+				deleteMemberFromFile(withdrawal);
 				loginedMember = null;
 				System.out.println("회원 탈퇴가 완료되었습니다.");
 				System.out.println("프로그램을 다시 실행해주세요.");
@@ -237,6 +263,7 @@ public class MovieDaoMain {
 	public void managerMod() {
 //    		if (loginedMember != null && loginedMember.isManager()) { // 해당 유저의 정보가 true일 경우 이용가능
 		UI.displayManagerMenu();
+		movieDao.readFile("movie.csv");
 		System.out.print("메뉴 선택 > ");
 		int managerMenu = sc.nextInt();
 		sc.nextLine();
@@ -260,6 +287,7 @@ public class MovieDaoMain {
 			movieDao.doSave(movieInfo);
 			movieDao.writeFile("movie.csv");
 			System.out.println("영화가 등록되었습니다.");
+			break;
 		case 2:
 			System.out.print("삭제하실 영화의 제목을 입력해주세요 > ");
 			String deleteInfo = sc.nextLine().trim();
@@ -271,9 +299,9 @@ public class MovieDaoMain {
 				break;
 			}
 			// 제목이 일치하는 영화의 정보 삭제후 갱신
-			movieDao.doDelete(foundMovie);
+			deleteMovieFromFile(deleteInfo);
 			System.out.printf("%s 영화가 목록에서 삭제되었습니다\n", deleteInfo);
-
+			break;
 		case 3:
 			System.out.println("------유저 목록------");
 			System.out.println("이름 \t ID \t 소지금");
@@ -284,6 +312,7 @@ public class MovieDaoMain {
 							member.getAge());
 				}
 			}
+			break;
 		case 4:
 			System.out.println("관리자 창을 종료하겠습니다.");
 			break;
@@ -294,49 +323,82 @@ public class MovieDaoMain {
 
 	}
 
-	public void saveReservation(MemberVO member, MovieVO movie, int row, int col) {
+	public void saveReservation(MemberVO members, MovieVO movies, int row, int col) {
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter("reservations.csv", true))) {
-			writer.write(member.getId() + "," + movie.getMovieName() + "," + row + "," + col);
-			writer.newLine();
+			for (MemberVO member : memberDao.members) {
+				for (MovieVO movie : member.getReservations()) {
+
+					writer.write(member.getId() + "," + movie.getMovieName() + "," + row + "," + col);
+					writer.newLine();
+				}
+			}
 		} catch (IOException e) {
 			System.out.println("예매 정보를 파일에 저장하는 중 오류가 발생했습니다.");
 		}
 	}
 
-	public void loadReservations() {
-		try (BufferedReader reader = new BufferedReader(new FileReader("reservations.csv"))) {
-			String line;
-			while ((line = reader.readLine()) != null) {
-				String[] data = line.split(",");
-				String movieName = data[1];
-				int row = Integer.parseInt(data[2]);
-				int col = Integer.parseInt(data[3]);
+	public void loadReservations(List<MemberVO> members) {
+	    try (BufferedReader reader = new BufferedReader(new FileReader("reservations.csv"))) {
+	        String line;
+	        while ((line = reader.readLine()) != null) {
+	            line = line.trim(); // 앞뒤 공백 제거
 
-				MovieVO movie = callMovieData(movieName);
-				if (movie != null) {
-					movie.getSeats()[row - 1][col - 1] = '■';
-				}
-			}
-		} catch (IOException e) {
-			System.out.println("예매 정보를 파일에서 불러오는 중 오류가 발생했습니다.");
-		}
+	            // 빈 줄이나 콤마가 없는 데이터는 건너뜀
+	            if (line.isEmpty() || !line.contains(",")) {
+	                continue;
+	            }
+
+	            String[] data = line.split(",");
+	            
+	            // 배열 길이를 확인하여 충분한 데이터가 있는지 검사
+	            if (data.length < 4) {
+	                System.out.println("잘못된 데이터 형식: " + line);
+	                continue; // 잘못된 형식의 줄은 건너뜀
+	            }
+
+	            String memberId = data[0]; // CSV에서 멤버 ID 가져옴
+	            String movieName = data[1]; // CSV에서 영화 이름 가져옴
+	            int row = Integer.parseInt(data[2]); // 좌석 행
+	            int col = Integer.parseInt(data[3]); // 좌석 열
+
+	            // 영화 정보 생성 (MovieVO 객체 생성)
+	            MovieVO movie = new MovieVO(movieName);
+	            // movie.bookSeat(row - 1, col - 1); // 좌석 예약 정보 설정
+
+	            // 멤버 ID와 일치하는 멤버를 찾아 예약 추가
+	            for (MemberVO member : members) {
+	                if (member.getId().equals(memberId)) { // 멤버 ID 비교
+	                    member.addReservation(movie); // 멤버의 예약 리스트에 영화 추가
+	                    break; // 예약이 추가되면 루프를 종료
+	                }
+	            }
+	        }
+	    } catch (IOException e) {
+	        System.out.println("예매 정보를 파일에서 불러오는 중 오류가 발생했습니다.");
+	    }
 	}
 
-	public void deleteReservations(String memberIdToDelete) {
+	public void deleteReservations(String movieToDelete) {
 		List<String> remainingReservations = new ArrayList<>();
 
 		try (BufferedReader reader = new BufferedReader(new FileReader("reservations.csv"))) {
 			String line;
 			while ((line = reader.readLine()) != null) {
+				line = line.trim(); // 데이터의 공백 제거
+	            // 빈 줄이면 넘어가기
+	            if (line.isEmpty()) {
+	                continue; // 빈 줄을 무시
+	            }
 				String[] data = line.split(",");
 				String memberId = data[0];
 				String movieName = data[1];
 				int row = Integer.parseInt(data[2]);
 				int col = Integer.parseInt(data[3]);
 
-				if (memberId.equals(memberIdToDelete)) {
-					MovieVO movie = callMovieData(movieName);
-					if (movie != null) {
+				movieDao.readFile("movie.csv");
+				MovieVO movie = callMovieData(movieName);
+				if (movieName.equals(movieToDelete)) {
+					if (row > 0 && row <= movie.getSeats().length && col > 0 && col <= movie.getSeats()[0].length) {
 						movie.getSeats()[row - 1][col - 1] = '□';
 					}
 				} else {
@@ -359,10 +421,69 @@ public class MovieDaoMain {
 
 	private MovieVO callMovieData(String movieName) {
 		for (MovieVO movie : movieDao.movieList) {
-			if (movie.getMovieName().equals(movieName)) {
+			if (movie.getMovieName().trim().equalsIgnoreCase(movieName.trim())) {
 				return movie;
 			}
 		}
 		return null;
 	}
+	
+	public void deleteMemberFromFile(MemberVO memberIdToDelete) {
+	    List<MemberVO> members = new ArrayList<>();
+
+	    // 1. 파일에서 모든 데이터를 읽어오기
+	    try (BufferedReader reader = new BufferedReader(new FileReader("member.csv"))) {
+	        String line;
+	        while ((line = reader.readLine()) != null) {
+	            String[] data = line.split(",");
+	            String loginId = data[0];
+	            String loginPass = data[1];
+	            String name = data[2];
+	            boolean manager = Boolean.parseBoolean(data[3]);
+	            int wallet = Integer.parseInt(data[4]);
+	            int age = Integer.parseInt(data[5]);
+
+	            // 삭제할 멤버 ID와 일치하지 않는 경우에만 리스트에 추가
+	            if (!loginId.equals(memberIdToDelete.getId())) {
+	                members.add(new MemberVO(loginId, loginPass, name, manager, wallet, age));
+	            }
+	        }
+	    } catch (IOException e) {
+	        System.out.println("파일을 읽는 중 오류가 발생했습니다.");
+	    }
+
+	    // 2. 남은 회원 데이터를 파일에 다시 기록 (덮어쓰기)
+	    try (BufferedWriter writer = new BufferedWriter(new FileWriter("member.csv"))) {
+	        for (MemberVO member : members) {
+	            writer.write(member.toFileFormat()); // 회원 정보를 CSV 형식으로 파일에 작성
+	            writer.newLine(); // 각 회원 정보를 새로운 줄에 작성
+	        }
+	        System.out.println("파일에 성공적으로 회원 정보를 갱신했습니다.");
+	    } catch (IOException e) {
+	        System.out.println("파일을 쓰는 중 오류가 발생했습니다.");
+	    }
+	}
+	
+	 public void deleteMovieFromFile(String movieToDelete) {
+	        List<MovieVO> remainingMovies = new ArrayList<>();
+
+	        // movie.csv에서 삭제할 영화 제외하고 메모리 리스트에 저장
+	        for (MovieVO movie : movieDao.movieList) {
+	            if (!movie.getMovieName().equals(movieToDelete)) {
+	                remainingMovies.add(movie); // 삭제 대상이 아닌 영화는 남김
+	            }
+	        }
+
+	        // 남은 영화 데이터를 다시 movie.csv 파일에 덮어쓰기
+	        try (BufferedWriter writer = new BufferedWriter(new FileWriter("movie.csv"))) {
+	            for (MovieVO movie : remainingMovies) {
+	                writer.write(movie.getMovieName() + "," + movie.getDate() + "," + movie.getSupervision() + ","
+	                        + movie.getAgeLimit() + "," + movie.getRating() + "," + movie.seatsToString());
+	                writer.newLine();
+	            }
+	            System.out.println(movieToDelete + " 영화가 성공적으로 삭제되었습니다.");
+	        } catch (IOException e) {
+	            System.out.println("파일을 쓰는 중 오류가 발생했습니다: " + e.getMessage());
+	        }
+	    }
 }

@@ -3,7 +3,6 @@ package com.pcwk.ehr.cmn;
 import java.util.List;
 
 public interface WorkDiv<T> {
-	
 	int writeFile(String path);
 	/**
 	 * 파일 읽기
