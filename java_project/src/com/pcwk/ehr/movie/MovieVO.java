@@ -137,7 +137,11 @@ public class MovieVO extends DTO {
 	        for (char seat : row) {
 	            sb.append(seat);
 	        }
-	        sb.append(";"); // 각 행의 좌석 끝에 구분자를 추가합니다.
+	        sb.append(";"); // 각 행의 좌석 끝에 구분자를 추가
+	    }
+	    // 마지막 세미콜론 제거
+	    if (sb.length() > 0) {
+	        sb.setLength(sb.length() - 1);
 	    }
 	    return sb.toString();
 	}

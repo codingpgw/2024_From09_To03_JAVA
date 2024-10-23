@@ -33,6 +33,9 @@ public class MovieDaoMain {
 		movieDao.readFile("movie.csv");
 		System.out.println("영화 제목  |       개봉일    |  감독  | 연령 제한  |  평점");
 		for (MovieVO movieInfo : movieDao.movieList) {
+			if (movieInfo == null) {
+		        continue;  // movieInfo가 null일 경우 처리
+		    }
 			System.out.printf("%s |   %s   |  %s  |  %2d   |  %.2f\n", movieInfo.getMovieName(),
 					movieInfo.getDate().format(formatter), movieInfo.getSupervision(), movieInfo.getAgeLimit(),
 					movieInfo.getRating());
@@ -62,7 +65,6 @@ public class MovieDaoMain {
 		} catch (java.lang.ArrayIndexOutOfBoundsException e) {
 			System.out.println(e.getMessage());
 		}
-		movieDao.readFile("movie.csv");
 		displayMovies();
 		MovieVO selectedMovie = null;
 		try {
@@ -95,12 +97,14 @@ public class MovieDaoMain {
 				loginedMember.setWallet(loginedMember.getWallet() - ticketPrice);
 				System.out.printf("%s 영화를 예매하셨습니다. 현재 잔액은 %d원입니다.\n", selectedMovie.getMovieName(),
 						loginedMember.getWallet());
-
+				
 				loginedMember.addReservation(selectedMovie);
 				saveReservation(loginedMember, selectedMovie, row, col);
 				selectedMovie.displaySeats();
 				movieDao.doUpdate(selectedMovie);
 				memberDao.doUpdate(loginedMember);
+				
+				loginedMember.cancelReservation(selectedMovie);
 			} else {
 				System.out.println("잔액이 부족하여 예매할 수 없습니다.");
 			}
@@ -400,6 +404,7 @@ public class MovieDaoMain {
 				if (movieName.equals(movieToDelete)) {
 					if (row > 0 && row <= movie.getSeats().length && col > 0 && col <= movie.getSeats()[0].length) {
 						movie.getSeats()[row - 1][col - 1] = '□';
+					    updateMovieSeats(movie);
 					}
 				} else {
 					remainingReservations.add(line);
@@ -418,6 +423,25 @@ public class MovieDaoMain {
 			System.out.println("파일을 쓰는 중 오류가 발생했습니다.");
 		}
 	}
+	
+	public void updateMovieSeats(MovieVO movie) {
+	    try (BufferedWriter writer = new BufferedWriter(new FileWriter("movie.csv"))) {
+	        for (MovieVO movies : movieDao.movieList) {
+	            // 수정할 영화는 새 좌석 정보로 업데이트
+	            if (movies.getMovieName().equals(movie.getMovieName())) {
+	                movies = movie; // 좌석 정보 업데이트
+	            }
+	            String movieData = movies.toFileFormat().trim();
+	            if (!movieData.isEmpty()) {
+	                writer.write(movieData);
+	                writer.newLine();
+	            }
+	        }
+	    } catch (IOException e) {
+	        System.out.println("movie.csv 파일을 쓰는 중 오류가 발생했습니다.");
+	    }
+	}
+	
 
 	private MovieVO callMovieData(String movieName) {
 		for (MovieVO movie : movieDao.movieList) {
