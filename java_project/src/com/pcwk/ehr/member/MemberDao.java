@@ -26,7 +26,7 @@ public class MemberDao implements WorkDiv<MemberVO> {
 					+ "                                                 \r\n" + " ";
 			System.out.println(message);
 			for (MemberVO vo : list) {
-				System.out.println(vo);
+				System.out.println(vo); //회원 정보 출력
 			}
 		} else {
 			System.out.println("회원정보가 없습니다.");
@@ -45,7 +45,7 @@ public class MemberDao implements WorkDiv<MemberVO> {
 		boolean flag = false;
 
 		for (MemberVO v : members) {
-			if (v.getId().equals(member.getId())) {
+			if (v.getId().equals(member.getId())) { //회원 ID 중복 체크
 				flag = true;
 				return flag;
 			}
@@ -56,13 +56,13 @@ public class MemberDao implements WorkDiv<MemberVO> {
 
 	@Override
 	public int doSave(MemberVO vo) {
-		removeDuplicates();
+		removeDuplicates(); //중복 회원 삭제
 		// param 입력된 데이터를 members 추가.
 		// 입력전에 memberId check 필요
 		int flag = 0;
 
 		if (isExistsMember(vo) == true) {
-			flag = 2;
+			flag = 2; //Id 중복인 경우 2
 			return flag;
 		}
 
@@ -156,7 +156,7 @@ public class MemberDao implements WorkDiv<MemberVO> {
 	        for (MemberVO member : members) {
 	            String memberData = member.toFileFormat();
 	            bw.write(memberData);
-	            bw.newLine();
+	            bw.newLine();//줄바꿈
 	        }
 	        flag = 1; 
 	    } catch (IOException e) {
@@ -183,12 +183,12 @@ public class MemberDao implements WorkDiv<MemberVO> {
 	    }
 
 	    try {
-	        String id = memberArr[0];
-	        String pass = memberArr[1];
-	        String name = memberArr[2];
-	        boolean manager = Boolean.parseBoolean(memberArr[3]);
-	        int wallet = Integer.parseInt(memberArr[4]);
-	        int age = Integer.parseInt(memberArr[5]);
+	        String id = memberArr[0];//회원 Id	
+	        String pass = memberArr[1];//비밀번호	
+	        String name = memberArr[2];//이름	
+	        boolean manager = Boolean.parseBoolean(memberArr[3]);//관리자 여부
+	        int wallet = Integer.parseInt(memberArr[4]);//소지금
+	        int age = Integer.parseInt(memberArr[5]);//나이
 	        out = new MemberVO(id, pass, name, manager, wallet, age);
 	    } catch (NumberFormatException e) {
 	        System.out.println("숫자 형식 변환 중 오류가 발생했습니다: " + e.getMessage());
@@ -210,7 +210,7 @@ public class MemberDao implements WorkDiv<MemberVO> {
 		                continue; // 빈 줄을 무시
 		            }
 				MemberVO outVO = StringtoMember(data);
-				members.add(outVO);
+				members.add(outVO);//회원 목록에 추가
 			}
 
 		} catch (IOException e) {
@@ -222,13 +222,13 @@ public class MemberDao implements WorkDiv<MemberVO> {
 		return members.size();
 	}
 	
-	public void removeDuplicates() {
+	public void removeDuplicates() {//중복 회원 삭제
 	    Set<String> uniqueMemberIds = new HashSet<>();
-	    List<MemberVO> uniqueMembers = new ArrayList<>();
+	    List<MemberVO> uniqueMembers = new ArrayList<>();//중복 삭제된 회원 목록
 
 	    for (MemberVO member : members) {
 	        if (uniqueMemberIds.add(member.getId())) {
-	            uniqueMembers.add(member);
+	            uniqueMembers.add(member);//중복이 아니면 회원목록에 추가
 	        }
 	    }
 

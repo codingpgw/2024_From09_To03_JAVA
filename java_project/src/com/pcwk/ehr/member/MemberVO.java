@@ -7,13 +7,13 @@ import java.util.Objects;
 import com.pcwk.ehr.cmn.DTO;
 import com.pcwk.ehr.movie.MovieVO;
 
-public class MemberVO extends DTO{
-	private String id;
-	private String pass;
-	private String name;
-	private boolean manager;
-	private int wallet;
-	private int age;
+public class MemberVO extends DTO{ //회원정보 관리 클래스
+	private String id; //회원 ID
+	private String pass; //회원 비밀번호
+	private String name; //회원 이름
+	private boolean manager; //관리자
+	private int wallet; //소지금
+	private int age; //나이
 	private List<MovieVO> reservations;
 	
 	public MemberVO() {
@@ -22,7 +22,7 @@ public class MemberVO extends DTO{
 	public MemberVO(String loginId) {
         this.id = loginId;
     }
-
+	//각 getter,setter
 	public String getId() {
 		return id;
 	}
@@ -88,11 +88,12 @@ public class MemberVO extends DTO{
 		this.age = age;
 		this.reservations = new ArrayList<>(); //초기화
 	}
+	//영화 예매 추가
 	public void addReservation(MovieVO movie) {
 	    if (this.reservations == null) {
-	        this.reservations = new ArrayList<>();
+	        this.reservations = new ArrayList<>();//예약 목록이 null일 경우 초기화
 	    }
-	    this.reservations.add(movie);
+	    this.reservations.add(movie); //예약 목록에 영화 추가 
 	}
 
 	public void cancelReservation(MovieVO movie) {
@@ -121,7 +122,7 @@ public class MemberVO extends DTO{
 		return "MemberVO [id=" + id + ", pass=" + pass + ", name=" + name + ", manager=" + manager + ", wallet="
 				+ wallet + ", age=" + age + ", reservations=" + reservations + "]";
 	}
-
+	//저장 형식 선언
 	public String toFileFormat() {
 	    return id + "," + pass + "," + name + "," + manager + "," + wallet + "," + age + "," + reservations;
 	}

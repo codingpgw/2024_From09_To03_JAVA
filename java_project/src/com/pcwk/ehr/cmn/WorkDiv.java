@@ -2,6 +2,8 @@ package com.pcwk.ehr.cmn;
 
 import java.util.List;
 
+import com.pcwk.ehr.member.MemberVO;
+
 public interface WorkDiv<T> {
 	int writeFile(String path);
 	/**

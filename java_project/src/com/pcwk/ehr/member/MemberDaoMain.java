@@ -21,9 +21,9 @@ public class MemberDaoMain {
 	}
 	public void MemberRun(){
 		Scanner sc = new Scanner(System.in);
-		boolean managerId = false; // 관리자 표시
+		boolean managerId = false;  // 관리자 표시
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd"); // 개봉일 형식 변환을 위한 선언
-		int myWallet = 0;
+		int myWallet = 0; //사용자 지갑 잔고
 		
 		memberDao.readFile("member.csv");
 		while(true) {
@@ -32,12 +32,12 @@ public class MemberDaoMain {
 			System.out.print("메뉴 선택 > ");
 			String menu = sc.nextLine().trim();
 			
-			if (menu.equals("4")) {
+			if (menu.equals("4")) { //종료 옵션
 				System.out.println("프로그램을 종료합니다.");
 				break;
-			} else if (menu.equals("2")) {
+			} else if (menu.equals("2")) { //회원가입 옵션
 				String loginId = null; // 로그인된 상태 여부 확인
-				if (isLogined()) {
+				if (isLogined()) { //사용자가 로그인 중인지 확인
 					System.out.println("로그아웃 후 이용해주세요.");
 					continue;
 				}
@@ -60,7 +60,7 @@ public class MemberDaoMain {
 					break;
 				}
 				String loginPass = null;
-				while (true) {
+				while (true) { //비밀번호 일치할 때까지 반복
 					System.out.printf("로그인 비밀번호 : ");
 					loginPass = sc.nextLine().trim();
 					System.out.printf("로그인 비밀번호 확인 : ");
@@ -121,7 +121,7 @@ public class MemberDaoMain {
 				        } else if (internalMenu.equals("3")) {
 				        	movieDaoMain.bookMovie(loginedMember);
 				        } else if (internalMenu.equals("4")) {
-				        	UI.displayPersonalMenu();
+				        	UI.displayPersonalMenu(); 
 				        	movieDaoMain.verifyInfo(loginedMember);
 				        } else if (internalMenu.equals("5")) {
 				        	if(loginedMember.isManager() == false) {
